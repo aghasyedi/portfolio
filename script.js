@@ -56,7 +56,7 @@ window.initSiteJS = () => {
         const newHamburger = hamburgerBtn.cloneNode(true);
         hamburgerBtn.parentNode.replaceChild(newHamburger, hamburgerBtn);
         newHamburger.addEventListener('click', toggleMenu);
-        
+
         const newBackdrop = backdrop.cloneNode(true);
         backdrop.parentNode.replaceChild(newBackdrop, backdrop);
         newBackdrop.addEventListener('click', closeMenu);
@@ -181,7 +181,7 @@ window.initSiteJS = () => {
         });
 
         const dots = carousel.querySelectorAll('.carousel-dot');
-        
+
         function goToSlide(index) {
             currentIndex = index;
             updateCarousel();
@@ -210,7 +210,7 @@ window.initSiteJS = () => {
             prevBtn.parentNode.replaceChild(newPrev, prevBtn);
             newPrev.addEventListener('click', () => { prevSlide(); resetAutoplay(); });
         }
-        
+
         if (nextBtn) {
             const newNext = nextBtn.cloneNode(true);
             nextBtn.parentNode.replaceChild(newNext, nextBtn);
@@ -281,10 +281,15 @@ window.initSiteJS = () => {
         const homeBtn = document.querySelector('.home-btn');
         if (homeBtn) {
             const href = homeBtn.getAttribute('href');
-            if (href) base = href.replace('/index.html', '').replace('index.html', '.');
+            if (href) {
+                base = href.replace('/index.html', '').replace('index.html', '.');
+            }
         }
-        
-        fetch(base + '/medium_data/config.json')
+
+        // Strip trailing slash from base to prevent // protocol-relative URL errors on Netlify
+        const configUrl = base.replace(/\/$/, '') + '/medium_data/config.json';
+
+        fetch(configUrl)
             .then(res => res.json())
             .then(data => {
                 const articles = data.articles;
@@ -338,20 +343,20 @@ window.initSiteJS = () => {
     // CV Modal Logic
     const cvModalBtns = document.querySelectorAll('.cv-modal-trigger');
     let cvModal = document.getElementById('cv-modal');
-    
+
     // Create CV modal if it doesn't exist
     if (!cvModal) {
         cvModal = document.createElement('div');
         cvModal.id = 'cv-modal';
         cvModal.className = 'lightbox';
-        
+
         let base = '.';
         const homeBtn = document.querySelector('.home-btn');
         if (homeBtn) {
             const href = homeBtn.getAttribute('href');
             if (href) base = href.replace('/index.html', '').replace('index.html', '.');
         }
-        
+
         cvModal.innerHTML = `
             <div class="cv-modal-content">
                 <div style="padding: 1rem 1.5rem; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; background: white;">
@@ -366,7 +371,7 @@ window.initSiteJS = () => {
         `;
         document.body.appendChild(cvModal);
     }
-    
+
     const cvModalClose = cvModal.querySelector('#cv-modal-close');
 
     if (cvModalBtns.length > 0 && cvModal) {
@@ -379,15 +384,15 @@ window.initSiteJS = () => {
                 cvModal.classList.add('active');
             });
         });
-        
+
         const closeCv = () => cvModal.classList.remove('active');
-        
+
         if (cvModalClose) {
             const newClose = cvModalClose.cloneNode(true);
             cvModalClose.parentNode.replaceChild(newClose, cvModalClose);
             newClose.addEventListener('click', closeCv);
         }
-        
+
         const newCvModal = cvModal.cloneNode(true);
         cvModal.parentNode.replaceChild(newCvModal, cvModal);
         newCvModal.addEventListener('click', (e) => {
