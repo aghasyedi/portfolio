@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Status | Agha Tasheer Syedi</title>
+    <meta name="description" content="A snapshot of what I'm exploring, building, and learning today.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Aurora -->
+    
+    <div aria-hidden class="aurora">
+        <div class="aurora__gradient"></div>
+        <div class="blob blob--peach"></div>
+        <div class="blob blob--lavender"></div>
+        <div class="blob blob--mint"></div>
+    </div>
+
+    <!-- Navigation -->
+        <nav class="navbar">
+        <div class="nav-left" style="display: flex; align-items: center; gap: 1rem;">
+            <a href="./index.html" class="home-btn" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+            <div class="logo">
+                <span class="desktop-logo">Agha Tasheer Syedi</span>
+                <span class="mobile-logo">Agha</span>
+            </div>
+        </div>
+        <button class="hamburger-btn" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="./status.html" class="status-tab" title="Current Status"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg></a>
+            <a href="./journey.html" class="" title="Achievements & Journey"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                </svg></a>
+            <a href="./map.html">Map</a>
+            <a href="./projects/index.html" class="">Projects</a>
+            <a href="./medium/index.html" class="">Medium</a>
+            <a href="./index.html#education" class="">Education</a>
+            <a href="./certifications.html" class="">Certifications</a>
+            <a href="./index.html#contact" class="">Contact</a>
+            <a href="mailto:cs.aghasyedi@gmail.com" class="btn btn-primary mobile-only-btn">
+                Say hello
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </a>
+        </div>
+        <a href="mailto:cs.aghasyedi@gmail.com" class="btn btn-primary desktop-only-btn">
+            Say hello
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Main Content -->
+        <section class="fade-up" style="margin-bottom: 4rem;">
+            <h1>Current <strong>Status</strong></h1>
+            <p style="max-width: 800px; font-size: 1.25rem;">
+                A snapshot of what I'm exploring, building, and learning today.
+            </p>
+            <div class="badge-group" style="margin-top: 1.5rem;">
+                <span class="cert-badge badge-space" id="last-updated-badge">Last Updated: 20 July 2026</span>
+            </div>
+        </section>
+
+        <section class="fade-up" style="position: relative;">
+            <div class="journey-container">
+                                <!-- Ribbon SVG -->
+                <svg class="journey-ribbon" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="ribbon-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#ec4899" stop-opacity="0.1" />
+                            <stop offset="30%" stop-color="#8b5cf6" stop-opacity="0.5" />
+                            <stop offset="70%" stop-color="#10b981" stop-opacity="0.5" />
+                            <stop offset="100%" stop-color="#ec4899" stop-opacity="0.1" />
+                        </linearGradient>
+                        <linearGradient id="ribbon-grad-2" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#10b981" stop-opacity="0.1" />
+                            <stop offset="40%" stop-color="#ec4899" stop-opacity="0.5" />
+                            <stop offset="80%" stop-color="#8b5cf6" stop-opacity="0.5" />
+                            <stop offset="100%" stop-color="#10b981" stop-opacity="0.1" />
+                        </linearGradient>
+                        <linearGradient id="ribbon-energy" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+                            <stop offset="50%" stop-color="rgba(255,255,255,0.8)" />
+                            <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Double Helix / Intertwining bezier curves -->
+                    <!-- Curve 1 -->
+                    <path class="ribbon-track"
+                        d="M 50,0 C 0,15 100,30 50,45 C 0,60 100,75 50,90 C 30,95 50,100 50,100" fill="none"
+                        stroke="url(#ribbon-grad)" stroke-width="1.5" stroke-linecap="round" />
+                    <path class="ribbon-flow"
+                        d="M 50,0 C 0,15 100,30 50,45 C 0,60 100,75 50,90 C 30,95 50,100 50,100" fill="none"
+                        stroke="url(#ribbon-energy)" stroke-width="0.8" stroke-linecap="round" />
+                    
+                    <!-- Curve 2 -->
+                    <path class="ribbon-track"
+                        d="M 50,0 C 100,15 0,30 50,45 C 100,60 0,75 50,90 C 70,95 50,100 50,100" fill="none"
+                        stroke="url(#ribbon-grad-2)" stroke-width="1.5" stroke-linecap="round" />
+                    <path class="ribbon-flow-2"
+                        d="M 50,0 C 100,15 0,30 50,45 C 100,60 0,75 50,90 C 70,95 50,100 50,100" fill="none"
+                        stroke="url(#ribbon-energy)" stroke-width="0.8" stroke-linecap="round" />
+                </svg>
+
+                <!-- Current Focus -->
+                <div class="journey-item item-left fade-up" style="z-index: 1;">
+                    <div class="cert-card journey-card" style="padding: 2.5rem; height: 100%;">
+                        <div class="cert-content">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Current Focus</h3>
+                            <p class="cert-org"
+                                style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1rem;">
+                                I'm currently pursuing an <strong style="color: var(--text-main);">M.Tech in Quantum
+                                    Computing</strong> at DIAT, Pune, specializing in Quantum Communication & Sensing.
+                            </p>
+                            <p class="cert-org" style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted);">
+                                My current academic focus is preparing for Dissertation I, exploring potential research
+                                directions, and strengthening my understanding of quantum technologies through
+                                coursework, simulations, and independent study.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Focus -->
+                <div class="journey-item item-right fade-up overlap-up" style="z-index: 2;">
+                    <div class="cert-card journey-card" style="padding: 2.5rem; height: 100%;">
+                        <div class="cert-content">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Research Focus</h3>
+                            <ul
+                                style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1.5rem;">
+                                <li style="font-size: 1rem; color: var(--text-muted);">Quantum Computing</li>
+                                <li style="font-size: 1rem; color: var(--text-muted);">Quantum Information Theory</li>
+                                <li style="font-size: 1rem; color: var(--text-muted);">Quantum Communication & QKD</li>
+                                <li style="font-size: 1rem; color: var(--text-muted);">Quantum Metrology & Sensing</li>
+                                <li style="font-size: 1rem; color: var(--text-muted);">Photonics & Scientific Computing
+                                </li>
+                            </ul>
+                            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted);">
+                                Alongside quantum technologies, I'm increasingly exploring computational approaches to
+                                astrophysics and space science.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Currently Learning -->
+                <div class="journey-item item-full fade-up overlap-up" style="z-index: 3;">
+                    <div class="cert-card journey-card"
+                        style="background: rgba(138, 43, 226, 0.04); border-color: rgba(138, 43, 226, 0.15); box-shadow: inset 0 0 40px rgba(138, 43, 226, 0.05); padding: 2.5rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Currently Learning</h3>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                            <div>
+                                <div class="cert-meta" style="margin-bottom: 1rem;"><span
+                                        class="cert-badge badge-physics">Quantum Technologies</span></div>
+                                <ul
+                                    style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
+                                    <li style="font-size: 1.05rem; color: var(--text-muted);">Quantum Communication</li>
+                                    <li style="font-size: 1.05rem; color: var(--text-muted);">Electrodynamics & Neutrino
+                                        Physics</li>
+                                    <li style="font-size: 1.05rem; color: var(--text-muted);">Quantum Metrology &
+                                        Sensing</li>
+                                    <li style="font-size: 1.05rem; color: var(--text-muted);">Particle Accelerators</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="cert-meta" style="margin-bottom: 1rem;"><span
+                                        class="cert-badge badge-astronomy">Astronomy & Space</span></div>
+                                <ul
+                                    style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
+                                    <li style="font-size: 1.05rem; color: var(--text-muted);">Pathway to Space
+                                        Specialization</li>
+                                    <li style="font-size: 1.05rem; color: var(--text-muted);">Modern Astrophysics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Currently Reading -->
+                <div class="journey-item item-left fade-up overlap-up" style="z-index: 4;">
+                    <div class="cert-card journey-card" style="padding: 2.5rem;">
+                        <div class="cert-content">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Currently Reading</h3>
+                            <p
+                                style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1.5rem;">
+                                Spanning textbooks, scientific literature, and popular science.</p>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong
+                                    style="display: block; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.5rem; opacity: 0.7;">Books</strong>
+                                <div style="font-size: 1.05rem; color: var(--text-main); font-style: italic;">Cosmos —
+                                    Carl Sagan</div>
+                            </div>
+                            <div>
+                                <strong
+                                    style="display: block; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.5rem; opacity: 0.7;">Topics</strong>
+                                <ul
+                                    style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <li style="font-size: 1rem; color: var(--text-muted);">Quantum Information & Comm.
+                                    </li>
+                                    <li style="font-size: 1rem; color: var(--text-muted);">Astrophysics & Cosmology</li>
+                                    <li style="font-size: 1rem; color: var(--text-muted);">Space Technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Building -->
+                <div class="journey-item item-right fade-up overlap-up" style="z-index: 5;">
+                    <div class="cert-card journey-card" style="padding: 2.5rem;">
+                        <div class="cert-content">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Currently Building</h3>
+                            <p
+                                style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1.5rem;">
+                                Expanding my personal research ecosystem and tools.</p>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
+                                <li style="font-size: 1.05rem; color: var(--text-muted);">Personal Research Portfolio
+                                </li>
+                                <li style="font-size: 1.05rem; color: var(--text-muted);">Research Documentation &
+                                    GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Writing -->
+                <div class="journey-item item-left fade-up overlap-up" style="z-index: 6;">
+                    <div class="cert-card journey-card" style="padding: 2.5rem;">
+                        <div class="cert-content">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Currently Writing</h3>
+                            <p
+                                style="font-size: 1.05rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1.5rem;">
+                                Building a long-term collection of technical articles covering:</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                                <span class="cert-badge badge-quantum">Quantum Computing</span>
+                                <span class="cert-badge badge-tech">Quantum Communication</span>
+                                <span class="cert-badge badge-astronomy">Astronomy</span>
+                                <span class="cert-badge badge-space">Astrophysics</span>
+                                <span class="cert-badge badge-physics">Space Science</span>
+                            </div>
+                            <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted);">
+                                Every article published on Medium is also archived on this website with a downloadable
+                                PDF version for long-term accessibility.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milestones -->
+                <div class="journey-item item-full fade-up overlap-up" style="z-index: 7;">
+                    <div class="cert-card journey-card" style="padding: 3rem 2.5rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 2rem;">Current Milestones</h3>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem;">
+                            <!-- Completed -->
+                            <div>
+                                <div class="cert-meta" style="margin-bottom: 1rem;"><span class="cert-badge badge-tech"
+                                        style="background: rgba(46, 204, 113, 0.1); color: #2ecc71; border-color: rgba(46, 204, 113, 0.2);">Recently
+                                        Completed</span></div>
+                                <ul
+                                    style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #2ecc71;">✓</span> Built and launched personal research
+                                        portfolio</li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #2ecc71;">✓</span> Created dedicated project showcase pages
+                                    </li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #2ecc71;">✓</span> Organized technical articles into
+                                        searchable archive</li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #2ecc71;">✓</span> Developed a structured certifications
+                                        library</li>
+                                </ul>
+                            </div>
+
+                            <!-- In Progress -->
+                            <div>
+                                <div class="cert-meta" style="margin-bottom: 1rem;"><span class="cert-badge badge-tech"
+                                        style="background: rgba(241, 196, 15, 0.1); color: #f1c40f; border-color: rgba(241, 196, 15, 0.2);">In
+                                        Progress</span></div>
+                                <ul
+                                    style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #f1c40f;">🚧</span> Preparing for Dissertation I</li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #f1c40f;">🚧</span> Publishing new technical articles</li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #f1c40f;">🚧</span> Completing advanced astronomy & physics
+                                        coursework</li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #f1c40f;">🚧</span> Improving research portfolio
+                                        documentation</li>
+                                </ul>
+                            </div>
+
+                            <!-- Next Goals -->
+                            <div>
+                                <div class="cert-meta" style="margin-bottom: 1rem;"><span class="cert-badge badge-tech"
+                                        style="background: rgba(52, 152, 219, 0.1); color: #3498db; border-color: rgba(52, 152, 219, 0.2);">Next
+                                        Goals</span></div>
+                                <ul
+                                    style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #3498db;">🎯</span> Secure a research internship</li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #3498db;">🎯</span> Begin Dissertation I research</li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #3498db;">🎯</span> Develop additional quantum simulations
+                                    </li>
+                                    <li
+                                        style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                        <span style="color: #3498db;">🎯</span> Contribute open-source tools for quantum
+                                        tech</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <!-- Research Vision (Freestanding, matching image) -->
+        <section class="fade-up" style="margin: 6rem auto 4rem; text-align: center; max-width: 850px;">
+            <h2
+                style="font-family: var(--font-serif); font-size: 3.5rem; font-weight: 400; margin-bottom: 3rem; color: var(--text-main); letter-spacing: -0.02em;">
+                Research Vision</h2>
+
+            <p
+                style="font-size: 1.3rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 2.5rem; font-weight: 300;">
+                My long-term goal is to contribute at the intersection of <strong
+                    style="color: var(--text-main); font-weight: 600;">Quantum Computing, <br />Quantum Communication,
+                    Astrophysics, and Scientific Computing.</strong>
+            </p>
+
+            <p
+                style="font-size: 1.15rem; line-height: 1.9; color: var(--text-muted); margin-bottom: 3rem; font-weight: 300;">
+                I'm particularly interested in developing computational models, simulations, and research-<br />driven
+                software that connect modern computer science with the fundamental physics<br /> governing the universe.
+                Over time, I hope to contribute to areas such as secure quantum<br /> communication, precision sensing,
+                and computational astrophysics.
+            </p>
+
+            <p
+                style="font-size: 1.15rem; line-height: 1.8; color: var(--text-muted); font-style: italic; font-weight: 300; opacity: 0.9;">
+                "Every project I build, every article I write, every course I complete, and every book I read is<br />
+                another step toward understanding—and contributing to—the future of quantum technologies<br /> and our
+                understanding of the universe."
+            </p>
+        </section>
+
+        <!-- Footer -->
+            <!-- Footer -->
+    <footer>
+        <div>© 2026 Agha Tasheer Syedi</div>
+        <div>From qubits to quasars — thoughtfully engineered in Pune, India.</div>
+    </footer>
+    </div>
+
+    <!-- CV Modal -->
+    <div id="cv-modal" class="lightbox">
+        <div class="cv-modal-content">
+            <div
+                style="padding: 1rem 1.5rem; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; background: white;">
+                <h3 style="margin:0; font-family: var(--font-sans); color: var(--text-main); font-size: 1.2rem;">
+                    Curriculum Vitae</h3>
+                <div>
+                    <a href="cv.pdf" download class="btn btn-primary btn-sm"
+                        style="padding: 0.5rem 1rem; margin-right: 1rem;">Download PDF</a>
+                    <button class="btn btn-secondary btn-sm" id="cv-modal-close"
+                        style="padding: 0.5rem 1rem;">Close</button>
+                </div>
+            </div>
+            <iframe src="cv.pdf" style="width: 100%; height: 100%; border: none; background: #f0f0f0;"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Dynamic Date Updater
+        const dateElement = document.getElementById('last-updated-badge');
+        if (dateElement) {
+            const today = new Date();
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            dateElement.innerHTML = `Last Updated: ${today.toLocaleDateString('en-GB', options)}`;
+            dateElement.title = "Updated automatically whenever this page is visited";
+        }
+    </script>
+</body>
+
+</html>

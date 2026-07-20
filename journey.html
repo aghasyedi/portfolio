@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trajectory | Agha Tasheer Syedi</title>
+    <meta name="description" content="My current life trajectory bridging Quantum, Astrophysics, and Computer Science.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Specific overrides for this page to create the Apple/JPL lab aesthetic */
+
+        .stardust-container {
+            display: none !important;
+        }
+
+
+
+        /* Subtle Vignette / Depth */
+
+
+
+
+        /* Typography overrides */
+
+
+
+
+        /* Feynman Timeline Architecture */
+        .feynman-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 8rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 12rem;
+        }
+
+        .feynman-spine {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 1px;
+            background: rgba(0, 0, 0, 0.15);
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        /* Particle Trajectory SVG overlay */
+        .spine-svg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100px;
+            height: 100%;
+            transform: translateX(-50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Research Node Group */
+        .node-group {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .node-group.left {
+            justify-content: flex-end;
+            padding-right: 50%;
+        }
+
+        .node-group.right {
+            justify-content: flex-start;
+            padding-left: 50%;
+        }
+
+        .node-group.right {
+            justify-content: flex-start;
+            padding-left: 50%;
+        }
+
+        /* The glass capsule node */
+        .glass-node {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        /* Connecting blueprint line */
+        .connector-line {
+            position: absolute;
+            top: 50%;
+            width: 6rem;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.15);
+            z-index: 1;
+            transition: width 0.5s ease, background 0.5s ease;
+        }
+
+        .node-group.left .connector-line {
+            right: 50%;
+            transform: translateY(-50%);
+        }
+
+        .node-group.right .connector-line {
+            left: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Editorial Content Block */
+        .editorial-content {
+            position: relative;
+            max-width: 440px;
+            padding: 2rem;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .node-group.left .editorial-content {
+            margin-right: 4rem;
+            text-align: right;
+        }
+
+        .node-group.right .editorial-content {
+            margin-left: 4rem;
+            text-align: left;
+        }
+
+        .node-group.center .editorial-content {
+            text-align: center;
+            max-width: 700px;
+        }
+
+        /* Micro typography */
+        .meta-label {
+
+
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .node-group.left .meta-label {
+            justify-content: flex-end;
+        }
+
+        .meta-label span.dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+
+
+
+
+        /* Hover States (Magnetic Refraction) */
+        .editorial-content::before {
+            content: '';
+            position: absolute;
+            inset: -20px;
+            background: radial-gradient(circle at center, rgba(16, 185, 129, 0.03) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: -1;
+            border-radius: 50%;
+            filter: blur(20px);
+        }
+
+        .node-group:hover .editorial-content::before {
+            opacity: 1;
+        }
+
+        .node-group:hover .glass-node {
+            transform: translate(-50%, 0) scale(1.5);
+            background: rgba(255, 255, 255, 0.9);
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15), inset 0 0 10px rgba(255, 255, 255, 1);
+        }
+
+        .node-group:hover .connector-line {
+            width: 7rem;
+            background: rgba(16, 185, 129, 0.3);
+        }
+
+        .node-group:hover .editorial-content {
+            transform: translateY(-4px);
+        }
+
+        /* Specific node colors */
+        .node-group:nth-child(2):hover .glass-node {
+            border-color: rgba(138, 43, 226, 0.4);
+            box-shadow: 0 8px 24px rgba(138, 43, 226, 0.15);
+        }
+
+        .node-group:nth-child(2):hover .connector-line {
+            background: rgba(138, 43, 226, 0.3);
+        }
+
+        .node-group:nth-child(3):hover .glass-node {
+            border-color: rgba(14, 165, 233, 0.4);
+            box-shadow: 0 8px 24px rgba(14, 165, 233, 0.15);
+        }
+
+        .node-group:nth-child(3):hover .connector-line {
+            background: rgba(14, 165, 233, 0.3);
+        }
+
+        .node-group:nth-child(4):hover .glass-node {
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+        }
+
+        .node-group:nth-child(4):hover .connector-line {
+            background: rgba(245, 158, 11, 0.3);
+        }
+
+        .node-group:nth-child(5):hover .glass-node {
+            border-color: rgba(236, 72, 153, 0.4);
+            box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15);
+        }
+
+        .node-group:nth-child(5):hover .connector-line {
+            background: rgba(236, 72, 153, 0.3);
+        }
+
+
+        /* The Grand Finale (Vision Drop) */
+        .node-group.center {
+            justify-content: center;
+            margin-top: 6rem;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .vision-drop {
+            width: 440px;
+            height: 440px;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(135deg);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.4), 0 20px 40px rgba(0, 0, 0, 0.02);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: all 0.5s ease;
+            z-index: 2;
+        }
+
+        .vision-drop:hover {
+            box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.6), 0 30px 60px rgba(0, 0, 0, 0.05);
+        }
+
+        .vision-drop-inner {
+            transform: rotate(-135deg) !important;
+            text-align: center;
+            max-width: 320px;
+            margin-top: 30px;
+            /* Offset to center visually in the teardrop */
+        }
+
+        .mobile-connector {
+            display: none;
+            position: absolute;
+            left: 2rem;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.15);
+            z-index: 1;
+            width: calc(50% - 2rem);
+        }
+
+        @media (max-width: 900px) {
+            .feynman-spine {
+                left: 2rem;
+            }
+
+            .spine-svg {
+                left: 2rem;
+            }
+
+            .node-group.left,
+            .node-group.right {
+                justify-content: flex-start;
+                padding: 0 0 0 5rem;
+            }
+
+            .glass-node {
+                left: 2rem;
+            }
+
+            .connector-line {
+                left: 2rem !important;
+                right: auto !important;
+                width: 3rem;
+                transform: translateY(-50%) !important;
+            }
+
+            .node-group.left .editorial-content,
+            .node-group.right .editorial-content {
+                margin: 0;
+                text-align: left;
+            }
+
+            .node-group.left .meta-label {
+                justify-content: flex-start;
+            }
+
+            .node-group:hover .connector-line {
+                width: 4rem;
+            }
+
+            body,
+            .container,
+            .feynman-track {
+                overflow-x: hidden;
+            }
+
+            .mobile-connector {
+                display: block;
+            }
+
+            .vision-drop {
+                width: 220px;
+                height: 220px;
+                transform: rotate(135deg);
+                margin: 0 auto;
+            }
+
+            .vision-drop-inner {
+                max-width: 170px;
+                margin-top: 15px;
+                transform: rotate(225deg) !important;
+            }
+
+            .vision-drop .vision-text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Aurora -->
+    
+    <div aria-hidden class="aurora">
+        <div class="aurora__gradient"></div>
+        <div class="blob blob--peach"></div>
+        <div class="blob blob--lavender"></div>
+        <div class="blob blob--mint"></div>
+    </div>
+
+    <!-- Navigation -->
+        <nav class="navbar">
+        <div class="nav-left" style="display: flex; align-items: center; gap: 1rem;">
+            <a href="./index.html" class="home-btn" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+            <div class="logo">
+                <span class="desktop-logo">Agha Tasheer Syedi</span>
+                <span class="mobile-logo">Agha</span>
+            </div>
+        </div>
+        <button class="hamburger-btn" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="./status.html" class="status-tab" title="Current Status"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg></a>
+            <a href="./journey.html" class="" title="Achievements & Journey"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                </svg></a>
+            <a href="./map.html">Map</a>
+            <a href="./projects/index.html" class="">Projects</a>
+            <a href="./medium/index.html" class="">Medium</a>
+            <a href="./index.html#education" class="">Education</a>
+            <a href="./certifications.html" class="">Certifications</a>
+            <a href="./index.html#contact" class="">Contact</a>
+            <a href="mailto:cs.aghasyedi@gmail.com" class="btn btn-primary mobile-only-btn">
+                Say hello
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </a>
+        </div>
+        <a href="mailto:cs.aghasyedi@gmail.com" class="btn btn-primary desktop-only-btn">
+            Say hello
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
+    </nav>
+
+    <div class="container" style="padding-top: 8rem;">
+
+        <div style="text-align: center; margin-bottom: 4rem;" class="fade-up">
+            <h1>My <strong>Journey</strong></h1>
+            <p style="max-width: 800px;  margin: 0 auto; color: var(--text-muted);">
+                Bridging Quantum, Astrophysics, and Scientific Research
+            </p>
+        </div>
+
+        <div class="feynman-container fade-up">
+            <!-- Central Spine -->
+            <div class="feynman-spine"></div>
+
+            <!-- Subtle SVG wave following the spine -->
+            <svg class="spine-svg" viewBox="0 0 100 1000" preserveAspectRatio="none">
+                <path d="M 50,0 C 70,200 30,300 50,500 C 70,700 30,800 50,1000" fill="none" stroke="rgba(0,0,0,0.1)"
+                    stroke-width="1" />
+            </svg>
+
+            <!-- Mobile Connector for Vision Drop -->
+            <div id="mobile-drop-connector" class="mobile-connector"></div>
+
+            <!-- Node 1: Academic -->
+            <div class="node-group left">
+                <div class="glass-node"></div>
+                <div class="connector-line"></div>
+                <div class="editorial-content">
+                    <div class="meta-label">NODE.01 <span class="dot" style="color: #10b981;"></span> ACADEMIC FOCUS
+                    </div>
+                    <h3>M.Tech & Dissertation</h3>
+                    <p>I am pursuing my <strong>M.Tech in Quantum Computing at DIAT</strong>.</p>
+                    <p>Currently, I am actively preparing for my Dissertation I and the upcoming faculty guide
+                        selection, establishing the bedrock of my academic research.</p>
+                </div>
+            </div>
+
+            <!-- Node 2: Learning -->
+            <div class="node-group right">
+                <div class="glass-node"></div>
+                <div class="connector-line"></div>
+                <div class="editorial-content">
+                    <div class="meta-label"><span class="dot" style="color: #8b5cf6;"></span> NODE.02 <span
+                            style="opacity:0.3">|</span> CONTINUOUS LEARNING</div>
+                    <h3>Physics & Space Science</h3>
+                    <p>My goal is to comprehend these domains deeply, prioritizing steady absorption over speed.</p>
+                    <ul
+                        style="list-style:none; padding:0;   color: var(--text-muted); margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li>[ ⚛ ] Electrodynamics</li>
+                        <li>[ ~ ] Neutrino Physics</li>
+                        <li>[ 🚀 ] Space Specialization Pathway</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Node 3: Writing -->
+            <div class="node-group left">
+                <div class="glass-node"></div>
+                <div class="connector-line"></div>
+                <div class="editorial-content">
+                    <div class="meta-label">NODE.03 <span class="dot" style="color: #0ea5e9;"></span> SYNTHESIS &
+                        PUBLISHING</div>
+                    <h3>Technical Articulation</h3>
+                    <p>Building a rigorous habit of writing about <strong>Quantum Physics, Astronomy, and Space
+                            Science</strong>.</p>
+                    <p>My articles are published on Medium and archived here as downloadable PDFs, cementing my
+                        understanding through exposition.</p>
+                </div>
+            </div>
+
+            <!-- Node 4: Website -->
+            <div class="node-group right">
+                <div class="glass-node"></div>
+                <div class="connector-line"></div>
+                <div class="editorial-content">
+                    <div class="meta-label"><span class="dot" style="color: #f59e0b;"></span> NODE.04 <span
+                            style="opacity:0.3">|</span> DIGITAL ARCHITECTURE</div>
+                    <h3>Personal Research Hub</h3>
+                    <p>This space is not a portfolio. It is a living research dashboard engineered to aggregate my
+                        projects, findings, and intellectual trajectory.</p>
+                    <p style=" color: var(--text-muted);">Currently refining dedicated project architectures and
+                        automated deployment pipelines via GitHub and Netlify.</p>
+                </div>
+            </div>
+
+            <!-- Node 5: Balance -->
+            <div class="node-group left">
+                <div class="glass-node"></div>
+                <div class="connector-line"></div>
+                <div class="editorial-content">
+                    <div class="meta-label">NODE.05 <span class="dot" style="color: #ec4899;"></span> EQUILIBRIUM</div>
+                    <h3>Growth & Spiritual Routine</h3>
+                    <p>Growth occurs not through collecting credentials, but through the evidence of continuous learning
+                        via courses, papers, and projects.</p>
+                    <p style="font-style: italic; color: var(--text-muted); margin-top: 1.5rem;  ">
+                        "Alongside my scientific studies, I maintain a daily practice of listening to one para of the
+                        Qur'an."
+                    </p>
+                </div>
+            </div>
+
+            <!-- The Vision -->
+            <div class="node-group center">
+                <div class="vision-drop">
+                    <div class="vision-drop-inner editorial-content">
+                        <div class="meta-label" style="justify-content: center;">FAR VISION</div>
+                        <h3 style=" margin-bottom: 1.5rem;margin-top: -0.5rem;">Quantum </br>&amp;</br> Astronomy</h3>
+                        <p class="vision-text" style=" line-height: 1.8; color: var(--text-muted);">
+                            I am working towards becoming an individual who seamlessly bridges <strong>Quantum
+                                Computing, Quantum Communication, Astrophysics, and Computer Science.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+            <!-- Footer -->
+    <footer>
+        <div>© 2026 Agha Tasheer Syedi</div>
+        <div>From qubits to quasars — thoughtfully engineered in Pune, India.</div>
+    </footer>
+    </div>
+
+    <!-- CV Modal -->
+    <div id="cv-modal" class="lightbox">
+        <div class="cv-modal-content">
+            <div
+                style="padding: 1rem 1.5rem; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; background: white;">
+                <h3 style="margin:0; font-family: var(--font-sans); color: var(--text-main); font-size: 1.2rem;">
+                    Curriculum Vitae</h3>
+                <div>
+                    <a href="cv.pdf" download class="btn btn-primary btn-sm"
+                        style="padding: 0.5rem 1rem; margin-right: 1rem;">Download PDF</a>
+                    <button class="btn btn-secondary btn-sm" id="cv-modal-close"
+                        style="padding: 0.5rem 1rem;">Close</button>
+                </div>
+            </div>
+            <iframe src="cv.pdf" style="width: 100%; height: 100%; border: none; background: #f0f0f0;"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Dynamic Date Updater
+        const dateElement = document.getElementById('last-updated-badge');
+        if (dateElement) {
+            const today = new Date();
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            dateElement.innerHTML = `Last Updated: ${today.toLocaleDateString('en-GB', options)}`;
+            dateElement.title = "Updated automatically whenever this page is visited";
+        }
+    </script>
+
+    <script>
+        // Precision Spine Terminator
+        function updateSpine() {
+            const drop = document.querySelector('.vision-drop');
+            const spine = document.querySelector('.feynman-spine');
+            const spineSvg = document.querySelector('.spine-svg');
+            const container = document.querySelector('.feynman-container');
+            const mobileConnector = document.getElementById('mobile-drop-connector');
+
+            if (drop && spine && container) {
+                const dropRect = drop.getBoundingClientRect();
+                const containerRect = container.getBoundingClientRect();
+
+                // Calculate exact top tip of the drop relative to the container
+                const topOffset = dropRect.top - containerRect.top;
+
+                spine.style.bottom = 'auto';
+                spine.style.height = (topOffset + 5) + 'px'; // +5 for a tiny seamless overlap
+                if (spineSvg) {
+                    spineSvg.style.height = (topOffset + 5) + 'px';
+                }
+                if (mobileConnector) {
+                    mobileConnector.style.top = (topOffset + 5) + 'px';
+                }
+            }
+        }
+        window.addEventListener('load', updateSpine);
+        window.addEventListener('resize', updateSpine);
+        setTimeout(updateSpine, 100); // Failsafe
+
+
+
+    </script>
+</body>
+
+</html>
