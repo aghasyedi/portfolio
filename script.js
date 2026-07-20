@@ -287,7 +287,8 @@ window.initSiteJS = () => {
         }
 
         // Strip trailing slash from base to prevent // protocol-relative URL errors on Netlify
-        const configUrl = base.replace(/\/$/, '') + '/medium_data/config.json';
+        const cleanBase = base.replace(/\/$/, '');
+        const configUrl = cleanBase + '/medium_data/config.json';
 
         fetch(configUrl)
             .then(res => res.json())
@@ -323,7 +324,7 @@ window.initSiteJS = () => {
                             </div>
                         </div>
                         <div class="project-gallery-side" style="padding: 0;">
-                            <img src="${base}/${article.folder_path}${article.thumbnail}" alt="${article.title}" 
+                            <img src="${cleanBase}/${article.folder_path}${article.thumbnail}" alt="${article.title}" 
                                  style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;"
                                  onclick="document.querySelector('.lightbox-img').src=this.src; document.querySelector('.lightbox').classList.add('active'); event.stopPropagation();">
                         </div>
