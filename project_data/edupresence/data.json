@@ -1,0 +1,35 @@
+{
+    "title": "EduPresence",
+    "date": "Feb 2025 \u2013 May 2025",
+    "association": "Sam Higginbottom University of Agriculture, Technology And Sciences (SHUATS)",
+    "description": "EduPresence is a next-generation learning management system (LMS) designed to streamline attendance tracking, course management, and student engagement in educational settings. Built as a Flask-based web application, it integrates advanced features like face recognition for attendance, QR code verification, live classes via Jitsi Meet, and secure authentication with Google OAuth. EduPresence aims to enhance learning efficiency with a secure, scalable, and user-friendly platform.",
+    "category": [
+        "Web Development",
+        "AI",
+        "Computer Vision"
+    ],
+    "status": "Completed",
+    "tech_stack": [
+        "Python",
+        "Flask",
+        "OpenCV",
+        "Google OAuth"
+    ],
+    "features": [
+        "Face recognition for attendance",
+        "QR code verification",
+        "Live classes via Jitsi Meet",
+        "Secure authentication with Google OAuth"
+    ],
+    "links": {
+        "live": "",
+        "github": "",
+        "pdf": ""
+    },
+    "images": [
+        "cover.jpeg",
+        "1.jpeg",
+        "2.jpeg",
+        "3.jpeg"
+    ]
+}

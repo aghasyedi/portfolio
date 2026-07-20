@@ -1,0 +1,25 @@
+{
+    "title": "College Attendance System",
+    "date": "Nov 2023 \u2013 Dec 2023",
+    "association": "",
+    "description": "The College Attendance System is a desktop application built using Python and Tkinter for the graphical user interface (GUI), with SQL as the database for managing student attendance records. The system allows users to calculate attendance percentages, update attendance, add or delete students, and manually manage attendance records efficiently.",
+    "category": [
+        "Desktop Application"
+    ],
+    "status": "Completed",
+    "tech_stack": [
+        "Python",
+        "Tkinter",
+        "SQL",
+        "Selenium"
+    ],
+    "features": [
+        "Calculate attendance percentages",
+        "Update, add, or delete students",
+        "Manually manage attendance records efficiently"
+    ],
+    "links": {},
+    "images": [
+        "cover.png"
+    ]
+}

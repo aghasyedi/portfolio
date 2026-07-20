@@ -1,0 +1,27 @@
+{
+    "title": "Student Management System",
+    "date": "Feb 2024 \u2013 May 2024",
+    "association": "",
+    "description": "This Student Management System (SMS) is designed to manage student information, courses, exams, faculty, and programs efficiently. The system is built using a combination of Java, Servlets, JSP, JavaScript, and MongoDB, along with AJAX to ensure a dynamic and responsive user experience.",
+    "category": [
+        "Web Development"
+    ],
+    "status": "Completed",
+    "tech_stack": [
+        "Java",
+        "Servlets",
+        "JSP",
+        "JavaScript",
+        "MongoDB",
+        "AJAX"
+    ],
+    "features": [
+        "Manage student information, courses, and exams",
+        "Dynamic and responsive user experience via AJAX",
+        "Interactive, data-driven web application"
+    ],
+    "links": {},
+    "images": [
+        "cover.png"
+    ]
+}

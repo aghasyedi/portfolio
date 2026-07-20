@@ -1,0 +1,33 @@
+{
+    "title": "BB84 Quantum Key Distribution Simulator",
+    "date": "Apr 2026 \u2013 Apr 2026",
+    "association": "Defence Institute of Advanced Technology (DIAT), DU, DRDO",
+    "description": "Interactive web application designed to simulate the BB84 Quantum Key Distribution (QKD) protocol. Developed entirely as a client-side tool without server dependencies(and its fast), utilising Vanilla JavaScript, HTML5, CSS3, KaTeX, and the Canvas API.",
+    "category": [
+        "Quantum Computing",
+        "Research",
+        "Web Development"
+    ],
+    "status": "Completed",
+    "tech_stack": [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "KaTeX",
+        "Canvas API"
+    ],
+    "features": [
+        "Simulation of photon transmission over a quantum channel with adjustable noise parameters and Quantum Bit Error Rate (QBER) auditing.",
+        "Advanced cryptographic post-processing pipelines featuring Information Reconciliation via Cascade and LDPC (Low-Density Parity-Check) Tanner graph belief propagation.",
+        "Privacy amplification using Universal Toeplitz Hashing to mitigate eavesdropping and generate unconditionally secure keys ready for the ChaCha20-Poly1305 cipher suite"
+    ],
+    "links": {
+        "live": "https://bb84qkd.netlify.app/",
+        "github": "",
+        "pdf": ""
+    },
+    "images": [
+        "cover.jpeg",
+        "1.jpeg"
+    ]
+}

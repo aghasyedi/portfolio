@@ -1,0 +1,21 @@
+{
+    "title": "C Program Tokenizer",
+    "date": "Apr 2024 \u2013 Apr 2024",
+    "association": "",
+    "description": "This program is designed to tokenize C program code, separating it into individual tokens or lexemes. Tokenization is a fundamental step in the process of parsing and analyzing C code, as it breaks down the code into its basic building blocks, such as keywords, identifiers, constants, and symbols.",
+    "category": [
+        "Scientific Computing"
+    ],
+    "status": "Completed",
+    "tech_stack": [
+        "C"
+    ],
+    "features": [
+        "Tokenize C program code into lexemes",
+        "Separate keywords, identifiers, constants, and symbols"
+    ],
+    "links": {},
+    "images": [
+        "cover.png"
+    ]
+}

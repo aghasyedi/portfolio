@@ -1,0 +1,26 @@
+{
+    "title": "AVingenious Clone Website",
+    "date": "Jun 2023 \u2013 Oct 2023",
+    "association": "AVingenious Technologies",
+    "description": "At Avingenious Technologies, my industrial training focused on reproducing their website. This study emphasizes professional development while highlighting the practical use of HTML, CSS, and JavaScript.",
+    "category": [
+        "Web Development"
+    ],
+    "status": "Completed",
+    "tech_stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ],
+    "features": [
+        "Reproduced corporate website",
+        "Practical use of frontend technologies"
+    ],
+    "links": {
+        "live": "https://rwa-ats.netlify.app/"
+    },
+    "images": [
+        "cover.png",
+        "1.png"
+    ]
+}
