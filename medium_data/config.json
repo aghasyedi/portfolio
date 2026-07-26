@@ -1,9 +1,43 @@
 {
     "articles": [
         {
+            "title": "Beyond Carbon and Water: Rethinking Life Across the Cosmos",
+            "subtitle": "Shadow Biosphere Cosmology (Sun #25)",
+            "date": "Jul 25",
+            "topics": [
+                "Astronomy",
+                "Astrophysics",
+                "Science",
+                "Physics"
+            ],
+            "description": "An exploration of alternative forms of life and a broader definition of life across the cosmos.",
+            "medium_url": "https://medium.com/@aghasyedi/beyond-carbon-and-water-rethinking-life-across-the-cosmos-f82998af0ed9",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Shadow%20Biosphere%20Cosmology.pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-30",
+            "folder_path": "medium_data/article-30/"
+        },
+        {
+            "title": "What If Alien Life Is Already Here? The Mystery of Earth’s Shadow Biosphere",
+            "subtitle": "Shadow Biosphere (Sun #24)",
+            "date": "Jul 25",
+            "topics": [
+                "Astronomy",
+                "Astrophysics",
+                "Science",
+                "Physics"
+            ],
+            "description": "Explores the hypothesis of a shadow biosphere and a second genesis of life on Earth.",
+            "medium_url": "https://medium.com/@aghasyedi/what-if-alien-life-is-already-here-the-mystery-of-earths-shadow-biosphere-100b986814a9",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Shadow%20Biosphere.pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-31",
+            "folder_path": "medium_data/article-31/"
+        },
+        {
             "title": "Universe Was Never Still: How Planets Wander Across Space",
             "subtitle": "Exoplanet Migration Theory (Sun #23)",
-            "date": "10h ago",
+            "date": "Jul 19",
             "topics": [
                 "Astronomy"
             ],
@@ -17,7 +51,7 @@
         {
             "title": "How a Planet\u2019s Shadow Can Reveal the Possibility of Life",
             "subtitle": "Exoplanet Atmosphere Theory (Sun #22)",
-            "date": "1d ago",
+            "date": "Jul 18",
             "topics": [
                 "Astronomy"
             ],

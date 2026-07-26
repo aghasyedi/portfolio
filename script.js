@@ -237,9 +237,10 @@ window.initSiteJS = () => {
     });
 
     // Lightbox Logic
-    let lightbox = document.querySelector('.lightbox');
+    let lightbox = document.getElementById('image-lightbox');
     if (!lightbox) {
         lightbox = document.createElement('div');
+        lightbox.id = 'image-lightbox';
         lightbox.className = 'lightbox';
         lightbox.innerHTML = `
             <div class="lightbox-content">
@@ -256,7 +257,7 @@ window.initSiteJS = () => {
     document.querySelectorAll('.carousel-item img, .project-gallery-side > img, .project-section img[style*="cursor:zoom-in"], .project-section img[style*="cursor: zoom-in"]').forEach(img => {
         img.addEventListener('click', (e) => {
             e.stopPropagation();
-            lightboxImg.src = img.src;
+            if (lightboxImg) lightboxImg.src = img.src;
             lightbox.classList.add('active');
         });
     });
@@ -265,7 +266,9 @@ window.initSiteJS = () => {
         lightbox.classList.remove('active');
     }
 
-    lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) closeLightbox();
     });
@@ -294,49 +297,80 @@ window.initSiteJS = () => {
             .then(res => res.json())
             .then(data => {
                 const articles = data.articles;
-                let html = '';
+                let currentIndex = 0;
+                const batchSize = 4;
 
-                articles.forEach(article => {
-                    const topicsHtml = article.topics.map(t => {
-                        let cls = 'badge-tech';
-                        const tl = t.toLowerCase();
-                        if (tl.includes('astro') || tl.includes('space')) cls = 'badge-space';
-                        else if (tl.includes('physics')) cls = 'badge-physics';
-                        else if (tl.includes('quantum')) cls = 'badge-quantum';
-                        return `<span class="cert-badge ${cls}">${t}</span>`;
-                    }).join('');
+                const renderBatch = () => {
+                    const batch = articles.slice(currentIndex, currentIndex + batchSize);
+                    if (batch.length === 0) return;
 
-                    html += `
-                    <div class="project-showcase-card medium-card fade-up">
-                        <div class="project-info-side">
-                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-                                <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 0.5rem;">${article.title}</h3>
+                    let html = '';
+                    batch.forEach(article => {
+                        const topicsHtml = article.topics.map(t => {
+                            let cls = 'badge-tech';
+                            const tl = t.toLowerCase();
+                            if (tl.includes('astro') || tl.includes('space')) cls = 'badge-space';
+                            else if (tl.includes('physics')) cls = 'badge-physics';
+                            else if (tl.includes('quantum')) cls = 'badge-quantum';
+                            return `<span class="cert-badge ${cls}">${t}</span>`;
+                        }).join('');
+
+                        html += `
+                        <div class="project-showcase-card medium-card fade-up">
+                            <div class="project-info-side">
+                                <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                    <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 0.5rem;">${article.title}</h3>
+                                </div>
+                                <span class="project-meta" style="display:block; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.85rem;">
+                                    ${article.subtitle} • ${article.date}
+                                </span>
+                                <div class="badge-group">${topicsHtml}</div>
+                                <p style="color: var(--text-muted); margin: 1rem 0;">${article.description}</p>
+                                
+                                <div class="project-action-buttons" style="margin-top: 1.5rem;">
+                                    <a href="${article.medium_url}" target="_blank" class="btn btn-primary transition-link">Read on Medium ↗</a>
+                                    <a href="${article.pdf_url || '#'}" target="_blank" class="btn btn-secondary">View on GitHub ↗</a>
+                                </div>
                             </div>
-                            <span class="project-meta" style="display:block; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.85rem;">
-                                ${article.subtitle} • ${article.date}
-                            </span>
-                            <div class="badge-group">${topicsHtml}</div>
-                            <p style="color: var(--text-muted); margin: 1rem 0;">${article.description}</p>
-                            
-                            <div class="project-action-buttons" style="margin-top: 1.5rem;">
-                                <a href="${article.medium_url}" target="_blank" class="btn btn-primary transition-link">Read on Medium ↗</a>
-                                <a href="${article.pdf_url || '#'}" target="_blank" class="btn btn-secondary">View on GitHub ↗</a>
+                            <div class="project-gallery-side" style="padding: 0;">
+                                <img src="${cleanBase}/${article.folder_path}${article.thumbnail}" alt="${article.title}" 
+                                     style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;"
+                                     onclick="document.querySelector('.lightbox-img').src=this.src; document.querySelector('.lightbox').classList.add('active'); event.stopPropagation();">
                             </div>
                         </div>
-                        <div class="project-gallery-side" style="padding: 0;">
-                            <img src="${cleanBase}/${article.folder_path}${article.thumbnail}" alt="${article.title}" 
-                                 style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;"
-                                 onclick="document.querySelector('.lightbox-img').src=this.src; document.querySelector('.lightbox').classList.add('active'); event.stopPropagation();">
-                        </div>
-                    </div>
-                    `;
-                });
+                        `;
+                    });
 
-                mediumContainer.innerHTML = html;
+                    const oldSentinel = document.getElementById('medium-sentinel');
+                    if (oldSentinel) oldSentinel.remove();
 
-                // Re-initialize intersection observer for dynamically added fade-up elements
-                const dynamicFadeElements = mediumContainer.querySelectorAll('.fade-up');
-                dynamicFadeElements.forEach(el => observer.observe(el));
+                    mediumContainer.insertAdjacentHTML('beforeend', html);
+
+                    const newCards = mediumContainer.querySelectorAll('.medium-card:not(.observed)');
+                    newCards.forEach(el => {
+                        el.classList.add('observed');
+                        observer.observe(el);
+                    });
+
+                    currentIndex += batchSize;
+
+                    if (currentIndex < articles.length) {
+                        const sentinel = document.createElement('div');
+                        sentinel.id = 'medium-sentinel';
+                        sentinel.style.height = '20px';
+                        mediumContainer.appendChild(sentinel);
+
+                        const sentinelObserver = new IntersectionObserver(entries => {
+                            if (entries[0].isIntersecting) {
+                                sentinelObserver.disconnect();
+                                renderBatch();
+                            }
+                        });
+                        sentinelObserver.observe(sentinel);
+                    }
+                };
+
+                renderBatch();
             })
             .catch(err => console.error("Error loading medium articles:", err));
     }
@@ -373,9 +407,13 @@ window.initSiteJS = () => {
         document.body.appendChild(cvModal);
     }
 
-    const cvModalClose = cvModal.querySelector('#cv-modal-close');
-
     if (cvModalBtns.length > 0 && cvModal) {
+        const newCvModal = cvModal.cloneNode(true);
+        cvModal.parentNode.replaceChild(newCvModal, cvModal);
+        cvModal = newCvModal; // Update the reference to point to the active node in the DOM
+
+        const cvModalClose = cvModal.querySelector('#cv-modal-close');
+
         // Clone and replace to remove old listeners
         cvModalBtns.forEach(btn => {
             const newBtn = btn.cloneNode(true);
@@ -389,15 +427,11 @@ window.initSiteJS = () => {
         const closeCv = () => cvModal.classList.remove('active');
 
         if (cvModalClose) {
-            const newClose = cvModalClose.cloneNode(true);
-            cvModalClose.parentNode.replaceChild(newClose, cvModalClose);
-            newClose.addEventListener('click', closeCv);
+            cvModalClose.addEventListener('click', closeCv);
         }
 
-        const newCvModal = cvModal.cloneNode(true);
-        cvModal.parentNode.replaceChild(newCvModal, cvModal);
-        newCvModal.addEventListener('click', (e) => {
-            if (e.target === newCvModal) newCvModal.classList.remove('active');
+        cvModal.addEventListener('click', (e) => {
+            if (e.target === cvModal) closeCv();
         });
     }
 };
