@@ -1,6 +1,40 @@
 {
     "articles": [
         {
+            "title": "How Does Dead Matter Become Alive?",
+            "subtitle": "Abiogenesis (Sun #27)",
+            "date": "Jul 27",
+            "topics": [
+                "Life",
+                "Physics",
+                "Science",
+                "Astronomy"
+            ],
+            "description": "An exploration of abiogenesis, how living systems might have emerged from non-living chemistry.",
+            "medium_url": "https://medium.com/@aghasyedi/how-does-dead-matter-become-alive-e0da0911557b",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Abiogenesis.pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-32",
+            "folder_path": "medium_data/article-32/"
+        },
+        {
+            "title": "Gravity May Be Leaking Into Another Dimension",
+            "subtitle": "Shadow Brane Theory (Sun #26)",
+            "date": "Jul 27",
+            "topics": [
+                "Science",
+                "Physics",
+                "Astronomy",
+                "Gravity"
+            ],
+            "description": "Explores the possibility that our universe is a three-dimensional membrane embedded within a larger higher-dimensional space.",
+            "medium_url": "https://medium.com/@aghasyedi/gravity-may-be-leaking-into-another-dimension-0c6ded68b889",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Shadow%20Brane%20Theory.pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-33",
+            "folder_path": "medium_data/article-33/"
+        },
+        {
             "title": "Beyond Carbon and Water: Rethinking Life Across the Cosmos",
             "subtitle": "Shadow Biosphere Cosmology (Sun #25)",
             "date": "Jul 25",
@@ -18,7 +52,7 @@
             "folder_path": "medium_data/article-30/"
         },
         {
-            "title": "What If Alien Life Is Already Here? The Mystery of Earth’s Shadow Biosphere",
+            "title": "What If Alien Life Is Already Here? The Mystery of Earth\u2019s Shadow Biosphere",
             "subtitle": "Shadow Biosphere (Sun #24)",
             "date": "Jul 25",
             "topics": [
