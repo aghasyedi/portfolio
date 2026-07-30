@@ -1755,15 +1755,17 @@ footer {
   border-radius: 50%;
   z-index: 100000;
   backdrop-filter: blur(4px);
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .lightbox-prev:hover,
 .lightbox-next:hover {
   background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-50%) scale(1.08);
 }
 
 .lightbox-prev {
@@ -1772,6 +1774,20 @@ footer {
 
 .lightbox-next {
   right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .lightbox-prev,
+  .lightbox-next {
+    font-size: 1.25rem;
+    padding: 0.6rem 0.85rem;
+  }
+  .lightbox-prev {
+    left: 0.75rem;
+  }
+  .lightbox-next {
+    right: 0.75rem;
+  }
 }
 
 .cv-modal-content {
