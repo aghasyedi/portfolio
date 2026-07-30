@@ -236,29 +236,101 @@ window.initSiteJS = () => {
         startAutoplay();
     });
 
-    // Lightbox Logic
+    // Lightbox Logic with Previous/Next Navigation
     let lightbox = document.getElementById('image-lightbox');
     if (!lightbox) {
         lightbox = document.createElement('div');
         lightbox.id = 'image-lightbox';
         lightbox.className = 'lightbox';
         lightbox.innerHTML = `
+            <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
             <div class="lightbox-content">
                 <button class="lightbox-close">&times;</button>
                 <img class="lightbox-img" src="" alt="Fullscreen Image">
             </div>
+            <button class="lightbox-next" aria-label="Next image">&#10095;</button>
         `;
         document.body.appendChild(lightbox);
     }
 
     const lightboxImg = lightbox.querySelector('.lightbox-img');
     const lightboxClose = lightbox.querySelector('.lightbox-close');
+    const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+    const lightboxNext = lightbox.querySelector('.lightbox-next');
 
-    document.querySelectorAll('.carousel-item img, .project-gallery-side > img, .project-section img[style*="cursor:zoom-in"], .project-section img[style*="cursor: zoom-in"]').forEach(img => {
+    let currentGalleryImages = [];
+    let currentGalleryIndex = 0;
+
+    function updateLightboxImage() {
+        if (currentGalleryImages.length > 0 && lightboxImg) {
+            lightboxImg.src = currentGalleryImages[currentGalleryIndex];
+            const hasMultiple = currentGalleryImages.length > 1;
+            if (lightboxPrev) lightboxPrev.style.display = hasMultiple ? 'flex' : 'none';
+            if (lightboxNext) lightboxNext.style.display = hasMultiple ? 'flex' : 'none';
+        }
+    }
+
+    function prevLightboxImage() {
+        if (currentGalleryImages.length <= 1) return;
+        currentGalleryIndex = (currentGalleryIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+        updateLightboxImage();
+    }
+
+    function nextLightboxImage() {
+        if (currentGalleryImages.length <= 1) return;
+        currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
+        updateLightboxImage();
+    }
+
+    if (lightboxPrev) {
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            prevLightboxImage();
+        });
+    }
+
+    if (lightboxNext) {
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            nextLightboxImage();
+        });
+    }
+
+    window.openLightboxImage = function(target) {
+        let targetSrc = typeof target === 'string' ? target : target.src;
+        let imgEl = typeof target === 'object' ? target : null;
+
+        let groupContainer = imgEl ? (imgEl.closest('.carousel') || imgEl.closest('.project-showcase-card') || imgEl.closest('.project-section') || imgEl.closest('.container') || document.body) : document.body;
+        let groupImgs = Array.from(groupContainer.querySelectorAll('.carousel-item img, .project-gallery-side img, .project-section img[style*="cursor:zoom-in"], .project-section img[style*="cursor: zoom-in"], img[style*="cursor:zoom-in"], img[style*="cursor: zoom-in"]'));
+        
+        let uniqueSrcs = [];
+        groupImgs.forEach(i => {
+            if (i.src && !uniqueSrcs.includes(i.src)) {
+                uniqueSrcs.push(i.src);
+            }
+        });
+
+        if (uniqueSrcs.length <= 1) {
+            let allPageImgs = Array.from(document.querySelectorAll('.carousel-item img, .project-gallery-side img, .project-section img[style*="cursor:zoom-in"], .project-section img[style*="cursor: zoom-in"], img[style*="cursor:zoom-in"], img[style*="cursor: zoom-in"]'));
+            allPageImgs.forEach(i => {
+                if (i.src && !uniqueSrcs.includes(i.src)) {
+                    uniqueSrcs.push(i.src);
+                }
+            });
+        }
+
+        currentGalleryImages = uniqueSrcs;
+        currentGalleryIndex = currentGalleryImages.indexOf(targetSrc);
+        if (currentGalleryIndex === -1) currentGalleryIndex = 0;
+
+        updateLightboxImage();
+        lightbox.classList.add('active');
+    };
+
+    document.querySelectorAll('.carousel-item img, .project-gallery-side img, .project-section img[style*="cursor:zoom-in"], .project-section img[style*="cursor: zoom-in"]').forEach(img => {
         img.addEventListener('click', (e) => {
             e.stopPropagation();
-            if (lightboxImg) lightboxImg.src = img.src;
-            lightbox.classList.add('active');
+            window.openLightboxImage(img);
         });
     });
 
@@ -270,11 +342,31 @@ window.initSiteJS = () => {
         lightboxClose.addEventListener('click', closeLightbox);
     }
     lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) closeLightbox();
+        if (e.target === lightbox || e.target.classList.contains('lightbox-content')) closeLightbox();
     });
 
+    // Touch Swipe Navigation for Mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    lightbox.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (!lightbox.classList.contains('active')) return;
+        const diff = touchEndX - touchStartX;
+        if (Math.abs(diff) > 40) {
+            if (diff < 0) nextLightboxImage();
+            else prevLightboxImage();
+        }
+    }, { passive: true });
+
     document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
         if (e.key === 'Escape') closeLightbox();
+        else if (e.key === 'ArrowLeft') prevLightboxImage();
+        else if (e.key === 'ArrowRight') nextLightboxImage();
     });
 
     // Medium Articles Dynamic Rendering
@@ -335,7 +427,7 @@ window.initSiteJS = () => {
                             <div class="project-gallery-side" style="padding: 0;">
                                 <img src="${cleanBase}/${article.folder_path}${article.thumbnail}" alt="${article.title}" 
                                      style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in;"
-                                     onclick="document.querySelector('.lightbox-img').src=this.src; document.querySelector('.lightbox').classList.add('active'); event.stopPropagation();">
+                                     onclick="window.openLightboxImage(this); event.stopPropagation();">
                             </div>
                         </div>
                         `;
