@@ -20,9 +20,9 @@
         "Jupyter Notebook"
     ],
     "features": [
-        "19 Complete Algorithm Profiles: Comprehensive documentation across 5 core pillars spanning quantum communication, oracle query models, phase/amplitude manipulation, hybrid NISQ variational models, and fault-tolerant stabilizer codes.",
+        "19 Complete Algorithm Profiles: Comprehensive documentation across 5 core pillars spanning quantum communication, oracle query models, phase/amplitude manipulation, hybrid NISQ variational models, and fault-tolerant stabiliser codes.",
         "Interactive Visualisers & Complexity Benchmarking: Web-based simulation interfaces for stepping through quantum circuits, inspecting phase kickback, and Chart.js dynamic scaling curves (classical vs. quantum).",
-        "Deep Mathematical Rigor & Dirac Notation: Complete state vector evolutions in Dirac bra-ket notation (|ψ⟩, ⟨ψ|), operator matrices, and computational complexity bounds rendered with MathJax v3.",
+        "Deep Mathematical Rigour & Dirac Notation: Complete state vector evolutions in Dirac bra-ket notation (|ψ⟩, ⟨ψ|), operator matrices, and computational complexity bounds rendered with MathJax v3.",
         "Single Source of Truth (AQAC.ipynb): Master Jupyter Notebook containing tested pure NumPy and Qiskit code implementations, circuit schematics, and measurement output plots."
     ],
     "links": {
