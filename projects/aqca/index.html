@@ -14,6 +14,16 @@
 
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon" type="image/png" href="../../images/icon.png">
+
+    <!-- MathJax v3 for LaTeX rendering -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -109,7 +119,7 @@
             <ul class="key-features" style="font-size: 1.1rem; color: var(--text-main); line-height: 1.8;">
                 <li><strong>19 Complete Algorithm Profiles:</strong> Comprehensive documentation spanning quantum communication, oracle query models, phase/amplitude manipulation, hybrid variational models, and fault-tolerant stabilizer codes.</li>
                 <li><strong>Interactive Visualisers:</strong> Web-based simulation interfaces allowing users to step through quantum circuits, inspect phase kickback, observe amplitude amplification, and analyse measurement statistics in real-time.</li>
-                <li><strong>Deep Mathematical Rigor:</strong> Every algorithm page features complete state vector evolutions in Dirac bra-ket notation ($\langle\psi|$, $|\psi\rangle$), operator matrices, and computational complexity bounds rendered using MathJax v3.</li>
+                <li><strong>Deep Mathematical Rigor:</strong> Every algorithm page features complete state vector evolutions in Dirac bra-ket notation (&#10216;&psi;|, |&psi;&#10217;), operator matrices, and computational complexity bounds rendered using MathJax v3.</li>
                 <li><strong>Analysis Centre & Comparison Matrix:</strong> An interactive benchmarking dashboard powered by Chart.js that dynamically plots classical vs. quantum scaling curves and generates side-by-side feature comparisons.</li>
                 <li><strong>Curated Scholarly References:</strong> Every algorithm section includes 3 to 4 authoritative citations including peer-reviewed papers (Physical Review Letters, Nature, FOCS/STOC), Wikipedia articles, and IBM Qiskit documentation.</li>
                 <li><strong>Single Source of Truth (AQAC.ipynb):</strong> All Python code blocks, circuit schematics, and measurement output plots are dynamically maintained and tested within a master Jupyter Notebook.</li>
