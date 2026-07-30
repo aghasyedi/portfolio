@@ -1,0 +1,38 @@
+{
+    "title": "AQCA: All Quantum Computing Algorithms",
+    "date": "Jul 2026 – Present",
+    "association": "Defence Institute of Advanced Technology (DIAT), DU, DRDO",
+    "description": "AQCA (All Quantum Computing Algorithms) is a state-of-the-art academic educational atlas and interactive simulation platform mapping 19 foundational and advanced quantum algorithms, communication protocols, phase/amplitude models, and fault-tolerant stabilizer codes. Features Dirac bra-ket mathematical proofs, interactive visualisers, Chart.js complexity benchmarks, and verified dual-track Qiskit/NumPy implementations.",
+    "category": [
+        "Quantum Computing",
+        "Research",
+        "Web Development"
+    ],
+    "status": "Completed",
+    "tech_stack": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "MathJax v3",
+        "Chart.js",
+        "Python",
+        "Qiskit",
+        "Jupyter Notebook"
+    ],
+    "features": [
+        "19 Complete Algorithm Profiles: Comprehensive documentation across 5 core pillars spanning quantum communication, oracle query models, phase/amplitude manipulation, hybrid NISQ variational models, and fault-tolerant stabilizer codes.",
+        "Interactive Visualisers & Complexity Benchmarking: Web-based simulation interfaces for stepping through quantum circuits, inspecting phase kickback, and Chart.js dynamic scaling curves (classical vs. quantum).",
+        "Deep Mathematical Rigor & Dirac Notation: Complete state vector evolutions in Dirac bra-ket notation (|ψ⟩, ⟨ψ|), operator matrices, and computational complexity bounds rendered with MathJax v3.",
+        "Single Source of Truth (AQAC.ipynb): Master Jupyter Notebook containing tested pure NumPy and Qiskit code implementations, circuit schematics, and measurement output plots."
+    ],
+    "links": {
+        "live": "",
+        "github": "https://github.com/aghasyedi/aqca",
+        "pdf": ""
+    },
+    "images": [
+        "cover.png",
+        "1.png",
+        "2.png"
+    ]
+}

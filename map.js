@@ -6,7 +6,7 @@ const mapData = {
             color: '#a855f7', // Purple
             angle: -135,
             children: [
-                'Algorithms',
+                { label: 'Algorithms (AQCA)', url: 'projects/aqca/index.html' },
                 'Information',
                 'Circuits',
                 'Error Correction',

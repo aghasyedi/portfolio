@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQCA: All Quantum Computing Algorithms | Agha Tasheer Syedi</title>
+    <meta name="description" content="AQCA (All Quantum Computing Algorithms) - Interactive educational atlas & simulation platform for 19 quantum algorithms by Agha Tasheer Syedi.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/png" href="../../images/icon.png">
+</head>
+
+<body>
+
+    <div aria-hidden class="aurora">
+        <div class="aurora__gradient"></div>
+        <div class="blob blob--peach"></div>
+        <div class="blob blob--lavender"></div>
+        <div class="blob blob--mint"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-left" style="display: flex; align-items: center; gap: 1rem;">
+            <a href="../../index.html" class="home-btn" aria-label="Home">
+                <img src="../../images/icon.png" alt="Logo" width="24" height="24" style="object-fit: contain;">
+            </a>
+            <div class="logo">
+                <span class="desktop-logo">Agha Tasheer Syedi</span>
+                <span class="mobile-logo">Agha</span>
+            </div>
+        </div>
+        <button class="hamburger-btn" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="../../status.html" class="status-tab" title="Current Status"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></a>
+            <a href="../../journey.html" class="" title="Achievements & Journey"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></a>
+            <a href="../../map.html">Map</a>
+            <a href="../../projects/index.html" class="">Projects</a>
+            <a href="../../medium/index.html" class="">Medium</a>
+            <a href="../../index.html#education" class="">Education</a>
+            <a href="../../certifications.html" class="">Certifications</a>
+            <a href="../../index.html#contact" class="">Contact</a>
+            <a href="mailto:cs.aghasyedi@gmail.com" class="btn btn-primary mobile-only-btn">
+                Say hello
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </a>
+        </div>
+        <a href="mailto:cs.aghasyedi@gmail.com" class="btn btn-primary desktop-only-btn">
+            Say hello
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="project-detail-hero fade-up">
+            <img src="../../project_data/aqca/cover.png" class="project-detail-cover" alt="AQCA Cover">
+            <div class="project-detail-overlay"></div>
+            <div class="project-detail-hero-content">
+                <h1>AQCA: All Quantum Computing Algorithms</h1>
+                <div class="badge-group">
+                    <span class="cert-badge badge-quantum">Quantum Computing</span>
+                    <span class="cert-badge badge-tech">Research</span>
+                    <span class="cert-badge badge-tech">Web Development</span>
+                </div>
+
+                <div class="tech-stack-pills" style="margin-top: 2rem;">
+                    <span class="tech-pill">HTML5</span>
+                    <span class="tech-pill">CSS3</span>
+                    <span class="tech-pill">JavaScript (ES6+)</span>
+                    <span class="tech-pill">MathJax v3</span>
+                    <span class="tech-pill">Chart.js</span>
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Qiskit</span>
+                    <span class="tech-pill">Jupyter Notebook</span>
+                </div>
+
+                <div class="project-action-buttons" style="margin-top: 2rem;">
+                    <a href="https://github.com/aghasyedi/aqca" target="_blank" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub Repository ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section fade-up">
+            <h2>Project Overview</h2>
+            <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-main);">
+                <strong>AQCA (All Quantum Computing Algorithms)</strong> is a state-of-the-art, academic-grade educational atlas and interactive simulation platform for quantum computing. Developed as a comprehensive reference portal, AQCA provides deep mathematical derivations, physical state evolutions, circuit schematics, interactive visualisers, and verified dual-track Python/Qiskit implementations for <strong>19 foundational and advanced quantum algorithms</strong>, communication protocols, and error-correcting codes.
+            </p>
+        </div>
+
+        <div class="project-section fade-up">
+            <h2>Key Features</h2>
+            <ul class="key-features" style="font-size: 1.1rem; color: var(--text-main); line-height: 1.8;">
+                <li><strong>19 Complete Algorithm Profiles:</strong> Comprehensive documentation spanning quantum communication, oracle query models, phase/amplitude manipulation, hybrid variational models, and fault-tolerant stabilizer codes.</li>
+                <li><strong>Interactive Visualisers:</strong> Web-based simulation interfaces allowing users to step through quantum circuits, inspect phase kickback, observe amplitude amplification, and analyse measurement statistics in real-time.</li>
+                <li><strong>Deep Mathematical Rigor:</strong> Every algorithm page features complete state vector evolutions in Dirac bra-ket notation ($\langle\psi|$, $|\psi\rangle$), operator matrices, and computational complexity bounds rendered using MathJax v3.</li>
+                <li><strong>Analysis Centre & Comparison Matrix:</strong> An interactive benchmarking dashboard powered by Chart.js that dynamically plots classical vs. quantum scaling curves and generates side-by-side feature comparisons.</li>
+                <li><strong>Curated Scholarly References:</strong> Every algorithm section includes 3 to 4 authoritative citations including peer-reviewed papers (Physical Review Letters, Nature, FOCS/STOC), Wikipedia articles, and IBM Qiskit documentation.</li>
+                <li><strong>Single Source of Truth (AQAC.ipynb):</strong> All Python code blocks, circuit schematics, and measurement output plots are dynamically maintained and tested within a master Jupyter Notebook.</li>
+            </ul>
+        </div>
+
+        <div class="project-section fade-up">
+            <h2>Algorithm & Protocol Catalogue (5 Pillars)</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                    <h3 style="color: var(--accent-purple, #a855f7); font-size: 1.25rem; margin-bottom: 0.75rem;">1. Quantum Communication</h3>
+                    <ul style="padding-left: 1.2rem; margin: 0; color: var(--text-muted);">
+                        <li>Bell State Generator</li>
+                        <li>Superdense Coding</li>
+                        <li>Quantum Teleportation</li>
+                        <li>Entanglement Swapping</li>
+                    </ul>
+                </div>
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                    <h3 style="color: var(--accent-purple, #a855f7); font-size: 1.25rem; margin-bottom: 0.75rem;">2. Early Oracle Algorithms</h3>
+                    <ul style="padding-left: 1.2rem; margin: 0; color: var(--text-muted);">
+                        <li>Deutsch's Algorithm</li>
+                        <li>Deutsch–Jozsa Algorithm</li>
+                        <li>Bernstein–Vazirani Algorithm</li>
+                        <li>Simon's Algorithm</li>
+                    </ul>
+                </div>
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                    <h3 style="color: var(--accent-purple, #a855f7); font-size: 1.25rem; margin-bottom: 0.75rem;">3. Phase & Amplitude Core</h3>
+                    <ul style="padding-left: 1.2rem; margin: 0; color: var(--text-muted);">
+                        <li>Quantum Fourier Transform (QFT)</li>
+                        <li>Quantum Phase Estimation (QPE)</li>
+                        <li>Grover's Search Algorithm</li>
+                        <li>Generalized Amplitude Amplification</li>
+                    </ul>
+                </div>
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+                    <h3 style="color: var(--accent-purple, #a855f7); font-size: 1.25rem; margin-bottom: 0.75rem;">4. Flagship & Hybrid Models</h3>
+                    <ul style="padding-left: 1.2rem; margin: 0; color: var(--text-muted);">
+                        <li>Shor's Algorithm</li>
+                        <li>Variational Quantum Eigensolver (VQE)</li>
+                        <li>Quantum Approximate Optimisation (QAOA)</li>
+                        <li>HHL Algorithm</li>
+                    </ul>
+                </div>
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; grid-column: span 1 / -1;">
+                    <h3 style="color: var(--accent-purple, #a855f7); font-size: 1.25rem; margin-bottom: 0.75rem;">5. Fault Tolerance & Error Correction</h3>
+                    <ul style="padding-left: 1.2rem; margin: 0; color: var(--text-muted); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem;">
+                        <li>3-Qubit Bit/Phase Repetition Codes [[3,1,1]]</li>
+                        <li>Shor's 9-Qubit Concatenated Code [[9,1,3]]</li>
+                        <li>Steane 7-Qubit CSS Stabilizer Code [[7,1,3]]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section fade-up">
+            <h2>Gallery</h2>
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1rem;">
+                <img src="../../project_data/aqca/cover.png" alt="AQCA Platform Dashboard" style="width:100%; border-radius:8px; cursor:zoom-in;">
+                <img src="../../project_data/aqca/1.png" alt="Quantum Circuit Simulator" style="width:100%; border-radius:8px; cursor:zoom-in;">
+                <img src="../../project_data/aqca/2.png" alt="Complexity Benchmarking Dashboard" style="width:100%; border-radius:8px; cursor:zoom-in;">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div>© 2026 Agha Tasheer Syedi</div>
+            <div>From qubits to quasars — thoughtfully engineered in Pune, India.</div>
+        </footer>
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>
