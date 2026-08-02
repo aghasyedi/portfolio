@@ -1,6 +1,38 @@
 {
     "articles": [
         {
+            "title": "How a Strange Radio Hiss Became Humanity’s First Baby Picture of the Universe",
+            "subtitle": "CMB Anisotropy (Sun #29)",
+            "date": "Jul 31",
+            "topics": [
+                "Science",
+                "Astronomy",
+                "Physics"
+            ],
+            "description": "An exploration of the Cosmic Microwave Background (CMB) and how it reveals the universe's earliest moments.",
+            "medium_url": "https://medium.com/@aghasyedi/how-a-strange-radio-hiss-became-humanitys-first-baby-picture-of-the-universe-b7c0f46cc82d",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Cosmic%20Microwave%20Background%20Anisotropy.pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-35",
+            "folder_path": "medium_data/article-35/"
+        },
+        {
+            "title": "How Empty Space Makes Black Holes Glow",
+            "subtitle": "Hawking Radiation Theory (Sun #28)",
+            "date": "Jul 31",
+            "topics": [
+                "Physics",
+                "Science",
+                "Astronomy"
+            ],
+            "description": "An exploration of Stephen Hawking's revolutionary insight that black holes are not perfectly black, but emit radiation.",
+            "medium_url": "https://medium.com/@aghasyedi/how-empty-space-makes-black-holes-glow-cb60ce151735",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Hawking%20Radiation%20Theory.pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-34",
+            "folder_path": "medium_data/article-34/"
+        },
+        {
             "title": "How Does Dead Matter Become Alive?",
             "subtitle": "Abiogenesis (Sun #27)",
             "date": "Jul 27",
