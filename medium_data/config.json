@@ -1,6 +1,39 @@
 {
     "articles": [
         {
+            "title": "When Time Slows Down",
+            "subtitle": "Theory of Relativity (Special) (Sun #31)",
+            "date": "Aug 02",
+            "topics": [
+                "Astronomy",
+                "Physics",
+                "Science"
+            ],
+            "description": "An exploration of the core ideas behind the Theory of Relativity (Special), including time dilation, length contraction, and the nature of spacetime.",
+            "medium_url": "https://medium.com/@aghasyedi/when-time-slows-down-d08c6a1d1995",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Theory%20of%20Relativity%20(Special).pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-37",
+            "folder_path": "medium_data/article-37/"
+        },
+        {
+            "title": "Gravity Was Never a Force",
+            "subtitle": "Theory of Relativity (General) (Sun #30)",
+            "date": "Aug 02",
+            "topics": [
+                "Science",
+                "Astronomy",
+                "Gravity",
+                "Physics"
+            ],
+            "description": "An exploration of the core ideas behind the Theory of Relativity (General), showing how gravity is the geometry of curved spacetime rather than a traditional force.",
+            "medium_url": "https://medium.com/@aghasyedi/gravity-was-never-a-force-92498bc3eaa4",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Theory%20of%20Relativity%20(General).pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-36",
+            "folder_path": "medium_data/article-36/"
+        },
+        {
             "title": "How a Strange Radio Hiss Became Humanity’s First Baby Picture of the Universe",
             "subtitle": "CMB Anisotropy (Sun #29)",
             "date": "Jul 31",
