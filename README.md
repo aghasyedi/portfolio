@@ -19,14 +19,13 @@
 
 ### Profile Overview
 
-```yaml
-Name:        Agha Tasheer Syedi
-Role:        M.Tech Researcher
-Focus:       Quantum Computing x Astronomy
-Location:    Pune, India
-Graduation:  Class of 2027
-Status:      Open for research collaborations & internships
-```
+| | |
+| :--- | :--- |
+| **Role** | M.Tech Researcher |
+| **Focus** | Quantum Computing x Astronomy |
+| **Location** | Pune, India |
+| **Graduation** | Class of 2027 |
+| **Status** | Open for research collaborations & internships |
 
 ---
 
@@ -35,22 +34,19 @@ Status:      Open for research collaborations & internships
 This repository hosts the source code for my personal portfolio and research showcase. It features a curated collection of my university courses, research projects, and certifications that reflect my continuous journey through cutting-edge technologies.
 
 #### Design Highlights
-```css
-.aesthetics {
-    visuals: "Soft aurora gradients, subtle blurs, and glassmorphism";
-    interactions: "Dynamic CSS with smooth transitions and fade-up animations";
-    architecture: "Semantic HTML5 and Vanilla CSS/JS for optimal performance and SEO";
-    responsive: "Adapts beautifully from mobile devices to large desktop monitors";
-}
-```
+
+* <img src="https://img.shields.io/badge/Visuals-FF69B4?style=flat-square" alt="Visuals" /> Soft aurora gradients, subtle blurs, and glassmorphism
+* <img src="https://img.shields.io/badge/Interactions-00BFFF?style=flat-square" alt="Interactions" /> Dynamic CSS with smooth transitions and fade-up animations
+* <img src="https://img.shields.io/badge/Architecture-8A2BE2?style=flat-square" alt="Architecture" /> Semantic HTML5 and Vanilla CSS/JS for optimal performance and SEO
+* <img src="https://img.shields.io/badge/Responsive-2E8B57?style=flat-square" alt="Responsive" /> Adapts beautifully from mobile devices to large desktop monitors
 
 #### Core Research & Interests
-```diff
-+ Quantum Computing & Information
-+ Astrophysics & Astronomy
-+ Artificial Intelligence
-+ Software Engineering
-```
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Quantum_Computing_%26_Information-333333?style=for-the-badge" alt="Quantum Computing" />
+  <img src="https://img.shields.io/badge/Astrophysics_%26_Astronomy-333333?style=for-the-badge" alt="Astrophysics" />
+  <img src="https://img.shields.io/badge/Software_Engineering-333333?style=for-the-badge" alt="Software Engineering" />
+</div>
 
 ---
 
