@@ -1,6 +1,23 @@
 {
     "articles": [
         {
+            "title": "The Day Classical Physics Broke",
+            "subtitle": "Quantum Mechanics (Sun #33)",
+            "date": "Aug 05",
+            "topics": [
+                "Astronomy",
+                "Quantum Physics",
+                "Physics",
+                "Science"
+            ],
+            "description": "An exploration of how quantum mechanics emerged from the breakdown of classical physics, revealing a universe built on probability and fundamental uncertainty.",
+            "medium_url": "https://medium.com/@aghasyedi/the-day-classical-physics-broke-5f519a8b6aff",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Quantum%20Mechanics.pdf",
+            "thumbnail": "cover.jpeg",
+            "id": "article-38",
+            "folder_path": "medium_data/article-38/"
+        },
+        {
             "title": "When Time Slows Down",
             "subtitle": "Theory of Relativity (Special) (Sun #31)",
             "date": "Aug 02",
