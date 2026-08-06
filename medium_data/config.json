@@ -1,6 +1,23 @@
 {
     "articles": [
         {
+            "title": "Quantum Field Theory: The Day Physics Abandoned Particles",
+            "subtitle": "Quantum Field Theory (Sun #34)",
+            "date": "Aug 06",
+            "topics": [
+                "Science",
+                "Physics",
+                "Quantum Physics",
+                "Astronomy"
+            ],
+            "description": "An exploration of Quantum Field Theory, revealing a cosmos filled with invisible fields that stretch across the entire universe, with particles appearing as temporary ripples within them.",
+            "medium_url": "https://medium.com/@aghasyedi/quantum-field-theory-the-day-physics-abandoned-particles-818ed8e03880",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Quantum%20Field%20Theory.pdf",
+            "thumbnail": "cover.png",
+            "id": "article-39",
+            "folder_path": "medium_data/article-39/"
+        },
+        {
             "title": "The Day Classical Physics Broke",
             "subtitle": "Quantum Mechanics (Sun #33)",
             "date": "Aug 05",
