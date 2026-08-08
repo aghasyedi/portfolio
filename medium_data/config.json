@@ -1,6 +1,22 @@
 {
     "articles": [
         {
+            "title": "From Tiny Strings to Infinite Universes: A Journey Beyond the Standard Model",
+            "subtitle": "String Theory (Sun #35)",
+            "date": "Aug 07",
+            "topics": [
+                "Quantum Physics",
+                "Astronomy",
+                "Physics"
+            ],
+            "description": "An exploration of string theory, proposing that the universe is composed of tiny vibrating strings rather than particles, and how it offers a possible path towards a quantum theory of gravity.",
+            "medium_url": "https://medium.com/@aghasyedi/from-tiny-strings-to-infinite-universes-a-journey-beyond-the-standard-model-ef8c6c4d2862",
+            "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/String%20Theory.pdf",
+            "thumbnail": "cover.png",
+            "id": "article-40",
+            "folder_path": "medium_data/article-40/"
+        },
+        {
             "title": "Quantum Field Theory: The Day Physics Abandoned Particles",
             "subtitle": "Quantum Field Theory (Sun #34)",
             "date": "Aug 06",
