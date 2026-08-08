@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Status | Agha Tasheer Syedi</title>
     <meta name="description" content="A snapshot of what I'm exploring, building, and learning today.">
-    <link rel="stylesheet" href="style.css">
+        <link rel="preload" as="style" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="icon" type="image/png" href="images/icon.webp">
     <link rel="stylesheet" href="glass/glass.css">
 </head>
 
@@ -27,11 +28,11 @@
         <div class="blob blob--mint"></div>
     </div>
 
-    <!-- Navigation -->
-        <nav class="navbar">
+        <!-- Navigation -->
+    <nav class="navbar">
         <div class="nav-left" style="display: flex; align-items: center; gap: 1rem;">
             <a href="./index.html" class="home-btn" aria-label="Home">
-                <img src="images/icon.png" alt="Logo" width="24" height="24" style="object-fit: contain;">
+                <img src="./images/icon.webp" alt="Logo" width="24" height="24" style="object-fit: contain;">
             </a>
             <div class="logo">
                 <span class="desktop-logo">Agha Tasheer Syedi</span>
@@ -418,7 +419,7 @@
                         style="padding: 0.5rem 1rem;">Close</button>
                 </div>
             </div>
-            <iframe src="cv.pdf" style="width: 100%; height: 100%; border: none; background: #f0f0f0;"></iframe>
+            <iframe loading="lazy" src="cv.pdf" style="width: 100%; height: 100%; border: none; background: #f0f0f0;"></iframe>
         </div>
     </div>
 

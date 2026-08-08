@@ -12,7 +12,7 @@
             "description": "An exploration of string theory, proposing that the universe is composed of tiny vibrating strings rather than particles, and how it offers a possible path towards a quantum theory of gravity.",
             "medium_url": "https://medium.com/@aghasyedi/from-tiny-strings-to-infinite-universes-a-journey-beyond-the-standard-model-ef8c6c4d2862",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/String%20Theory.pdf",
-            "thumbnail": "cover.png",
+            "thumbnail": "cover.webp",
             "id": "article-40",
             "folder_path": "medium_data/article-40/"
         },
@@ -29,7 +29,7 @@
             "description": "An exploration of Quantum Field Theory, revealing a cosmos filled with invisible fields that stretch across the entire universe, with particles appearing as temporary ripples within them.",
             "medium_url": "https://medium.com/@aghasyedi/quantum-field-theory-the-day-physics-abandoned-particles-818ed8e03880",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Quantum%20Field%20Theory.pdf",
-            "thumbnail": "cover.png",
+            "thumbnail": "cover.webp",
             "id": "article-39",
             "folder_path": "medium_data/article-39/"
         },
@@ -46,7 +46,7 @@
             "description": "An exploration of how quantum mechanics emerged from the breakdown of classical physics, revealing a universe built on probability and fundamental uncertainty.",
             "medium_url": "https://medium.com/@aghasyedi/the-day-classical-physics-broke-5f519a8b6aff",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Quantum%20Mechanics.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-38",
             "folder_path": "medium_data/article-38/"
         },
@@ -62,7 +62,7 @@
             "description": "An exploration of the core ideas behind the Theory of Relativity (Special), including time dilation, length contraction, and the nature of spacetime.",
             "medium_url": "https://medium.com/@aghasyedi/when-time-slows-down-d08c6a1d1995",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Theory%20of%20Relativity%20(Special).pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-37",
             "folder_path": "medium_data/article-37/"
         },
@@ -79,7 +79,7 @@
             "description": "An exploration of the core ideas behind the Theory of Relativity (General), showing how gravity is the geometry of curved spacetime rather than a traditional force.",
             "medium_url": "https://medium.com/@aghasyedi/gravity-was-never-a-force-92498bc3eaa4",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Theory%20of%20Relativity%20(General).pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-36",
             "folder_path": "medium_data/article-36/"
         },
@@ -95,7 +95,7 @@
             "description": "An exploration of the Cosmic Microwave Background (CMB) and how it reveals the universe's earliest moments.",
             "medium_url": "https://medium.com/@aghasyedi/how-a-strange-radio-hiss-became-humanitys-first-baby-picture-of-the-universe-b7c0f46cc82d",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Cosmic%20Microwave%20Background%20Anisotropy.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-35",
             "folder_path": "medium_data/article-35/"
         },
@@ -111,7 +111,7 @@
             "description": "An exploration of Stephen Hawking's revolutionary insight that black holes are not perfectly black, but emit radiation.",
             "medium_url": "https://medium.com/@aghasyedi/how-empty-space-makes-black-holes-glow-cb60ce151735",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Hawking%20Radiation%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-34",
             "folder_path": "medium_data/article-34/"
         },
@@ -128,7 +128,7 @@
             "description": "An exploration of abiogenesis, how living systems might have emerged from non-living chemistry.",
             "medium_url": "https://medium.com/@aghasyedi/how-does-dead-matter-become-alive-e0da0911557b",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Abiogenesis.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-32",
             "folder_path": "medium_data/article-32/"
         },
@@ -145,7 +145,7 @@
             "description": "Explores the possibility that our universe is a three-dimensional membrane embedded within a larger higher-dimensional space.",
             "medium_url": "https://medium.com/@aghasyedi/gravity-may-be-leaking-into-another-dimension-0c6ded68b889",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Shadow%20Brane%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-33",
             "folder_path": "medium_data/article-33/"
         },
@@ -162,7 +162,7 @@
             "description": "An exploration of alternative forms of life and a broader definition of life across the cosmos.",
             "medium_url": "https://medium.com/@aghasyedi/beyond-carbon-and-water-rethinking-life-across-the-cosmos-f82998af0ed9",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Shadow%20Biosphere%20Cosmology.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-30",
             "folder_path": "medium_data/article-30/"
         },
@@ -179,7 +179,7 @@
             "description": "Explores the hypothesis of a shadow biosphere and a second genesis of life on Earth.",
             "medium_url": "https://medium.com/@aghasyedi/what-if-alien-life-is-already-here-the-mystery-of-earths-shadow-biosphere-100b986814a9",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Shadow%20Biosphere.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-31",
             "folder_path": "medium_data/article-31/"
         },
@@ -193,7 +193,7 @@
             "description": "Planets move inward due to disk interactions.",
             "medium_url": "https://medium.com/@aghasyedi/universe-was-never-still-how-planets-wander-across-space-5668c011fbce",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Exoplanet%20Migration%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-01",
             "folder_path": "medium_data/article-01/"
         },
@@ -207,7 +207,7 @@
             "description": "Characterizes alien worlds' gases via spectroscopy.",
             "medium_url": "https://medium.com/@aghasyedi/how-a-planets-shadow-can-reveal-the-possibility-of-life-88f79f173bb7",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Exoplanet%20Atmosphere%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-02",
             "folder_path": "medium_data/article-02/"
         },
@@ -221,7 +221,7 @@
             "description": "Exploring the cosmic speed limit, dark matter, causality, black holes, and the hidden architecture of reality beyond light.",
             "medium_url": "https://medium.com/@aghasyedi/why-the-speed-of-light-might-be-the-universes-greatest-illusion-5ad42a5e8b4a",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/The%20Phantom%20Universe.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-03",
             "folder_path": "medium_data/article-03/"
         },
@@ -235,7 +235,7 @@
             "description": "Life seeded Earth from extraterrestrial sources.",
             "medium_url": "https://medium.com/@aghasyedi/what-if-life-on-earth-came-from-space-the-universe-may-already-be-alive-93e5fa44eea2",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Panspermia.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-04",
             "folder_path": "medium_data/article-04/"
         },
@@ -250,7 +250,7 @@
             "description": "Complex life is rare due to specific planetary conditions.",
             "medium_url": "https://medium.com/@aghasyedi/earth-wasnt-meant-to-exist-784e4df096f6",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Rare%20Earth%20Hypothesis.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-05",
             "folder_path": "medium_data/article-05/"
         },
@@ -264,7 +264,7 @@
             "description": "Region around stars where liquid water can exist on planets.",
             "medium_url": "https://medium.com/@aghasyedi/how-close-are-we-to-becoming-venus-why-life-exists-in-a-tiny-window-of-the-universe-54ab109f430b",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Habitable%20Zone%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-06",
             "folder_path": "medium_data/article-06/"
         },
@@ -279,7 +279,7 @@
             "description": "Black holes have entropy and temperature, linking gravity and quantum mechanics.",
             "medium_url": "https://medium.com/@aghasyedi/from-chai-tea-to-cosmos-how-black-holes-store-the-universes-secrets-683c01b3a4f6",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Black%20Hole%20Thermodynamics.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-07",
             "folder_path": "medium_data/article-07/"
         },
@@ -294,7 +294,7 @@
             "description": "Information may persist despite black hole evaporation.",
             "medium_url": "https://medium.com/@aghasyedi/do-black-holes-really-erase-reality-the-information-paradox-that-shook-physics-2c7ec03a8080",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Black%20Hole%20Information%20Paradox.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-08",
             "folder_path": "medium_data/article-08/"
         },
@@ -308,7 +308,7 @@
             "description": "An unknown energy drives the universe\u2019s accelerated expansion.",
             "medium_url": "https://medium.com/@aghasyedi/why-the-universe-refused-to-slow-down-9e3055bac80f",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Dark%20Energy%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-09",
             "folder_path": "medium_data/article-09/"
         },
@@ -323,7 +323,7 @@
             "description": "Invisible matter affects gravity without emitting light.",
             "medium_url": "https://medium.com/@aghasyedi/the-universe-has-a-secret-skeleton-and-its-called-dark-matter-9d1f41a230f2",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Dark%20Matter%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-10",
             "folder_path": "medium_data/article-10/"
         },
@@ -337,7 +337,7 @@
             "description": "An in-depth exploration of from apollo to artemis: the science behind humanity\u2019s return to the moon and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/from-apollo-to-artemis-the-science-behind-humanitys-return-to-the-moon-ed6c86311da9",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/astro/Artemis%20II.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-11",
             "folder_path": "medium_data/article-11/"
         },
@@ -352,7 +352,7 @@
             "description": "An in-depth exploration of the cosmic mistake that created everything and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/the-cosmic-mistake-that-created-everything-0c518866690b",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Baryogenesis.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-12",
             "folder_path": "medium_data/article-12/"
         },
@@ -366,7 +366,7 @@
             "description": "An in-depth exploration of what if reality isn\u2019t real \u2014 but mathematical? and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/what-if-reality-isnt-real-but-mathematical-a3e0e6d5fbb7",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Mathematical%20Universe%20Hypothesis.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-13",
             "folder_path": "medium_data/article-13/"
         },
@@ -380,7 +380,7 @@
             "description": "An in-depth exploration of seeing atoms: how we finally learned to map matter itself and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/seeing-atoms-how-we-finally-learned-to-map-matter-itself-72486310cf95",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/quantum/Atom%20Probe%20Tomography.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-14",
             "folder_path": "medium_data/article-14/"
         },
@@ -395,7 +395,7 @@
             "description": "An in-depth exploration of how a tiny quantum field blew up the entire universe and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/how-a-tiny-quantum-field-blew-up-the-entire-universe-e1d390229b72",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Inflationary%20Universe%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-15",
             "folder_path": "medium_data/article-15/"
         },
@@ -410,7 +410,7 @@
             "description": "An in-depth exploration of from black holes to reality: how the universe stores information and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/from-black-holes-to-reality-how-the-universe-stores-information-77cad335b1c5",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Holographic%20Principle.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-16",
             "folder_path": "medium_data/article-16/"
         },
@@ -425,7 +425,7 @@
             "description": "An in-depth exploration of you are living multiple lives right now (and you don\u2019t know it) and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/you-are-living-multiple-lives-right-now-and-you-dont-know-it-251d16662cc9",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Everettian%20Multiverse.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-17",
             "folder_path": "medium_data/article-17/"
         },
@@ -440,7 +440,7 @@
             "description": "An in-depth exploration of what if every choice you never made is still happening? and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/what-if-every-choice-you-never-made-is-still-happening-90a549163617",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Many-Worlds%20Interpretation.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-18",
             "folder_path": "medium_data/article-18/"
         },
@@ -454,7 +454,7 @@
             "description": "An in-depth exploration of what if every choice you make creates a new universe? and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/what-if-every-choice-you-make-creates-a-new-universe-41803e619dfa",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Multiverse%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-19",
             "folder_path": "medium_data/article-19/"
         },
@@ -469,7 +469,7 @@
             "description": "An in-depth exploration of are we alone? the equation that turns wonder into science and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/are-we-alone-the-equation-that-turns-wonder-into-science-e54ce6128281",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Drake%20Equation.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-20",
             "folder_path": "medium_data/article-20/"
         },
@@ -483,7 +483,7 @@
             "description": "An in-depth exploration of where are the aliens? the deep mystery of the cosmos and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/where-are-the-aliens-the-deep-mystery-of-the-cosmos-5ae45975bd48",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Fermi%20Paradox.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-21",
             "folder_path": "medium_data/article-21/"
         },
@@ -497,7 +497,7 @@
             "description": "An in-depth exploration of the experiment that showed the universe isn\u2019t local and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/the-experiment-that-showed-the-universe-isnt-local-93747d9f31c2",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/quantum/CHSH%20Inequality.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-22",
             "folder_path": "medium_data/article-22/"
         },
@@ -512,7 +512,7 @@
             "description": "An in-depth exploration of the infinite matryoshka universe: simulations inside simulations and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/the-infinite-matryoshka-universe-simulations-inside-simulations-3705633da452",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Simulated%20Multiverse.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-23",
             "folder_path": "medium_data/article-23/"
         },
@@ -526,7 +526,7 @@
             "description": "An in-depth exploration of reality or rendering? the physics behind the simulation hypothesis and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/reality-or-rendering-the-physics-behind-the-simulation-hypothesis-2b84e6853702",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Simulation%20Hypothesis.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-24",
             "folder_path": "medium_data/article-24/"
         },
@@ -540,7 +540,7 @@
             "description": "An in-depth exploration of from nothing to everything: how the universe was born and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/from-nothing-to-everything-how-the-universe-was-born-4b2c1b849e6c",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Big%20Bang%20Theory.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-25",
             "folder_path": "medium_data/article-25/"
         },
@@ -555,7 +555,7 @@
             "description": "An in-depth exploration of empty space isn\u2019t empty: before the big bang and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/empty-space-isnt-empty-before-the-big-bang-037ded037b81",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/expositions/Before%20Time%3A%20Unpacking%20the%20Pre-Big%20Bang%20Vacuum.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-26",
             "folder_path": "medium_data/article-26/"
         },
@@ -569,7 +569,7 @@
             "description": "An in-depth exploration of when silence isn\u2019t silent: how physicists tame vacuum fluctuations and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/when-silence-isnt-silent-how-physicists-tame-vacuum-fluctuations-9d361fc8734c",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/quantum/Squeezed%20Light.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-27",
             "folder_path": "medium_data/article-27/"
         },
@@ -583,7 +583,7 @@
             "description": "An in-depth exploration of 100 gigawatts and a 1-gram spacecraft: humanity\u2019s boldest journey and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/100-gigawatts-and-a-1-gram-spacecraft-humanitys-boldest-journey-a9308e451530",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/astro/Beam-Powered%20Propulsion.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-28",
             "folder_path": "medium_data/article-28/"
         },
@@ -597,7 +597,7 @@
             "description": "An in-depth exploration of squids: macroscopic quantum coherence at the edge of measurement and its implications for modern science and our understanding of reality.",
             "medium_url": "https://medium.com/@aghasyedi/squids-macroscopic-quantum-coherence-at-the-edge-of-measurement-b2423a73d195",
             "pdf_url": "https://github.com/aghasyedi/planck-to-parsec/blob/main/quantum/SQUIDs.pdf",
-            "thumbnail": "cover.jpeg",
+            "thumbnail": "cover.webp",
             "id": "article-29",
             "folder_path": "medium_data/article-29/"
         }
