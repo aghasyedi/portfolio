@@ -493,7 +493,7 @@ window.initSiteJS = () => {
                         <button class="btn btn-secondary btn-sm" id="cv-modal-close" style="padding: 0.5rem 1rem;">Close</button>
                     </div>
                 </div>
-                <iframe src="${base}/cv.pdf" style="width: 100%; height: 100%; border: none; background: #f0f0f0;"></iframe>
+                <iframe data-src="${base}/cv.pdf" style="width: 100%; height: 100%; border: none; background: #f0f0f0;"></iframe>
             </div>
         `;
         document.body.appendChild(cvModal);
@@ -512,6 +512,11 @@ window.initSiteJS = () => {
             btn.parentNode.replaceChild(newBtn, btn);
             newBtn.addEventListener('click', (e) => {
                 e.preventDefault();
+                const iframe = cvModal.querySelector('iframe');
+                if (iframe && iframe.hasAttribute('data-src')) {
+                    iframe.src = iframe.getAttribute('data-src');
+                    iframe.removeAttribute('data-src');
+                }
                 cvModal.classList.add('active');
             });
         });

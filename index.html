@@ -15,7 +15,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="icon" type="image/png" href="images/icon.webp">
+    <link rel="preload" href="images/agha.webp" as="image">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
     <nav class="navbar">
         <div class="nav-left" style="display: flex; align-items: center; gap: 1rem;">
             <a href="./index.html" class="home-btn" aria-label="Home">
-                <img src="images/icon.png" alt="Logo" width="24" height="24" style="object-fit: contain;">
+                <img src="images/icon.webp" alt="Logo" width="24" height="24" style="object-fit: contain;">
             </a>
             <div class="logo">
                 <span class="desktop-logo">Agha Tasheer Syedi</span>
@@ -120,7 +121,7 @@
 
             <div class="hero-visual">
                 <div class="image-container">
-                    <img src="images/agha.png" alt="Agha Tasheer Syedi">
+                    <img src="images/agha.webp" alt="Agha Tasheer Syedi">
                 </div>
 
                 <div class="badge badge-top-right">
@@ -349,7 +350,7 @@
                     <div class="cert-icon-container">
                         <a href="#" target="_blank" class="cert-logo-link">
                             <img src="https://ui-avatars.com/api/?name=Birla+Institute+of+Technology+and+Science,+Pilani&background=fff&color=000"
-                                alt="Birla Institute of Technology and Science, Pilani Logo">
+                                alt="Birla Institute of Technology and Science, Pilani Logo" loading="lazy">
                         </a>
                     </div>
                     <div class="cert-content">
@@ -375,7 +376,7 @@
                     <div class="cert-icon-container">
                         <a href="#" target="_blank" class="cert-logo-link">
                             <img src="https://ui-avatars.com/api/?name=University+of+Colorado+Boulder&background=fff&color=000"
-                                alt="University of Colorado Boulder Logo">
+                                alt="University of Colorado Boulder Logo" loading="lazy">
                         </a>
                     </div>
                     <div class="cert-content">
@@ -400,7 +401,7 @@
                 <div class="cert-card">
                     <div class="cert-icon-container">
                         <a href="#" target="_blank" class="cert-logo-link">
-                            <img src="https://ui-avatars.com/api/?name=KAIST&background=fff&color=000" alt="KAIST Logo">
+                            <img src="https://ui-avatars.com/api/?name=KAIST&background=fff&color=000" alt="KAIST Logo" loading="lazy">
                         </a>
                     </div>
                     <div class="cert-content">
@@ -426,7 +427,7 @@
                     <div class="cert-icon-container">
                         <a href="#" target="_blank" class="cert-logo-link">
                             <img src="https://ui-avatars.com/api/?name=Universitat+Autònoma+de+Barcelona&background=fff&color=000"
-                                alt="Universitat Autònoma de Barcelona Logo">
+                                alt="Universitat Autònoma de Barcelona Logo" loading="lazy">
                         </a>
                     </div>
                     <div class="cert-content">
@@ -462,7 +463,7 @@
         <!-- Contact Section -->
         <section id="contact" class="fade-up">
             <div class="contact-card">
-                <img src="images/contact.png" alt="Contact Illustration" class="contact-illustration">
+                <img src="images/contact.webp" alt="Contact Illustration" class="contact-illustration" loading="lazy">
                 <h2>Curiosity becomes progress <i>when people build together</i>.</h2>
                 <p>My work spans quantum computing, quantum communication, scientific software, and modern web
                     technologies. If you're building something ambitious, I'd love to hear about it.</p>
@@ -543,7 +544,7 @@
                         style="padding: 0.5rem 1rem;">Close</button>
                 </div>
             </div>
-            <iframe src="cv.pdf" style="width: 100%; height: 100%; border: none; background: #f0f0f0;"></iframe>
+            <iframe data-src="cv.pdf" style="width: 100%; height: 100%; border: none; background: #f0f0f0;"></iframe>
         </div>
     </div>
 
